@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vida Saudável</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo ao Guia de Vida Saudável</h1>
+        <p>A alimentação saudável é fundamental para manter o corpo e a mente em equilíbrio. Um regime alimentar equilibrado pode ajudar a prevenir doenças, melhorar o humor e aumentar a energia. É importante incluir uma variedade de alimentos ricos em nutrientes, como frutas, vegetais, proteínas magras e carboidratos integrais.</p>
+        <p>Complete o formulário abaixo para receber recomendações personalizadas sobre sua alimentação.</p>
+
+        <form id="user-form">
+            <div class="form-group">
+                <label for="weight">Peso (kg):</label>
+                <input type="text" id="weight" name="weight" required>
+            </div>
+            <div class="form-group">
+                <label for="height">Altura (cm):</label>
+                <input type="text" id="height" name="height" required>
+            </div>
+            <div class="form-group">
+                <label for="meals">Quantas vezes se alimenta por dia:</label>
+                <input type="text" id="meals" name="meals" required>
+            </div>
+            <div class="form-group">
+                <label for="goal">Seu objetivo:</label>
+                <select id="goal" name="goal" required>
+                    <option value="">Selecione</option>
+                    <option value="gain">Ganhar Peso</option>
+                    <option value="lose">Perder Peso</option>
+                </select>
+            </div>
+            <button type="button" onclick="submitForm()">Enviar</button>
+        </form>
+    </div>
+
+    <script>
+        function submitForm() {
+            const form = document.getElementById('user-form');
+            const goal = document.getElementById('goal').value;
+
+            if (goal) {
+                window.location.href = `recommendations.html?goal=${goal}`;
+            }
+        }
+    </script>
+</body>
+</html>

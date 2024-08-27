@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendações</title>
+   
+</head>
+<body>
+    <div class="container">
+        <h1>Recomendações de Alimentação</h1>
+        <div id="recommendations" class="plate">
+            <!-- Recomendações serão carregadas aqui -->
+        </div>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const goal = urlParams.get('goal');
+
+        const recommendationsDiv = document.getElementById('recommendations');
+
+        if (goal === 'gain') {
+            recommendationsDiv.innerHTML = `
+                <h2>Para Ganhar Peso</h2>
+                <p>Para ganhar peso, é importante consumir mais calorias do que você gasta. Aqui estão algumas sugestões:</p>
+                <ul>
+                    <li>Proteínas: Carne magra, peixes, ovos, legumes.</li>
+                    <li>Carboidratos: Arroz integral, batata-doce, quinoa.</li>
+                    <li>Gorduras saudáveis: Abacate, nozes, azeite de oliva.</li>
+                </ul>
+                <p>Você pode planejar suas refeições da seguinte forma:</p>
+                <label for="breakfast">Café da Manhã:</label>
+                <input type="text" id="breakfast" name="breakfast">
+                <label for="lunch">Almoço:</label>
+                <input type="text" id="lunch" name="lunch">
+                <label for="dinner">Jantar:</label>
+                <input type="text" id="dinner" name="dinner">
+                <label for="snacks">Lanches:</label>
+                <input type="text" id="snacks" name="snacks">
+                <button type="button" onclick="showPlate()">Mostrar Prato</button>
+            `;
+        } else if (goal === 'lose') {
+            recommendationsDiv.innerHTML = `
+                <h2>Para Perder Peso</h2>
+                <p>Para perder peso, é fundamental consumir menos calorias do que você gasta. Aqui estão algumas sugestões:</p>
+                <ul>
+                    <li>Proteínas: Peito de frango, peixe, tofu.</li>
+                    <li>Carboidratos: Vegetais, frutas, grãos integrais.</li>
+                    <li>Gorduras saudáveis: Amêndoas, azeite de oliva.</li>
+                </ul>
+                <p>Você pode planejar suas refeições da seguinte forma:</p>
+                <label for="breakfast">Café da Manhã:</label>
+                <input type="text" id="breakfast" name="breakfast">
+                <label for="lunch">Almoço:</label>
+                <input type="text" id="lunch" name="lunch">
+                <label for="dinner">Jantar:</label>
+                <input type="text" id="dinner" name="dinner">
+                <label for="snacks">Lanches:</label>
+                <input type="text" id="snacks" name="snacks">
+                <button type="button" onclick="showPlate()">Mostrar Prato</button>
+            `;
+        }
+
+        function showPlate() {
+            // Aqui você pode adicionar a lógica para mostrar o "prato" com as porcentagens
+            alert('Função para mostrar o prato não está implementada.');
+        }
+    </script>
+</body>
+</html>
