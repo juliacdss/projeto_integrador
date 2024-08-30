@@ -62,3 +62,61 @@ document.addEventListener('DOMContentLoaded', () => {
         progressDiv.innerHTML = progressMessage;
     }
 });
+function showMeal(meal) {
+    const mealOptions = document.getElementById('meal-options');
+    mealOptions.innerHTML = ''; // Limpa os alimentos anteriores
+
+    let foods = [];
+
+    switch(meal) {
+        case 'breakfast':
+            foods = [
+                { name: 'Ovos', image: 'eggs.png' },
+                { name: 'Iogurte Grego', image: 'yogurt.png' },
+                { name: 'Pão Integral com Manteiga de Amendoim', image: 'bread_peanut_butter.png' },
+                { name: 'Aveia com Frutas', image: 'oatmeal.png' },
+                { name: 'Abacate', image: 'avocado.png' }
+            ];
+            break;
+        case 'snack':
+            foods = [
+                { name: 'Shake de Proteína', image: 'protein_shake.png' },
+                { name: 'Iogurte Grego com Granola', image: 'yogurt_granola.png' },
+                { name: 'Batata Doce Assada', image: 'sweet_potato.png' },
+                { name: 'Frutas Secas', image: 'dried_fruits.png' },
+                { name: 'Nozes e Castanhas', image: 'nuts.png' }
+            ];
+            break;
+        case 'lunch':
+            foods = [
+                { name: 'Peito de Frango Grelhado', image: 'chicken.png' },
+                { name: 'Arroz Integral', image: 'rice.png' },
+                { name: 'Quinoa com Legumes', image: 'quinoa.png' },
+                { name: 'Batata Doce Assada', image: 'sweet_potato.png' },
+                { name: 'Azeite de Oliva', image: 'olive_oil.png' }
+            ];
+            break;
+        case 'dinner':
+            foods = [
+                { name: 'Salmão Grelhado', image: 'salmon.png' },
+                { name: 'Purê de Batata', image: 'mashed_potatoes.png' },
+                { name: 'Omelete com Legumes', image: 'omelette.png' },
+                { name: 'Cuscuz Marroquino', image: 'couscous.png' },
+                { name: 'Guacamole', image: 'guacamole.png' }
+            ];
+            break;
+        default:
+            foods = [];
+    }
+
+    foods.forEach(food => {
+        const foodItem = document.createElement('div');
+        foodItem.className = 'food-item';
+        foodItem.innerHTML = `
+            <img src="images/${food.image}" alt="${food.name}" style="width:50px; height:50px; vertical-align:middle; margin-right:10px;">
+            ${food.name}
+        `;
+        mealOptions.appendChild(foodItem);
+    });
+}
+
