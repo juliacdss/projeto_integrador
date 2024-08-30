@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganhar Peso</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ganhar Peso</h1>
+        <p>Monte seu prato com os seguintes alimentos:</p>
+        <div id="food-options">
+            <!-- Adicione ícones e alimentos aqui -->
+            <div class="food-item" data-food="carne"><i class="fas fa-drumstick-bite"></i> Carne magra</div>
+            <div class="food-item" data-food="peixe"><i class="fas fa-fish"></i> Peixe</div>
+            <div class="food-item" data-food="ovo"><i class="fas fa-egg"></i> Ovos</div>
+            <!-- Mais opções -->
+        </div>
+
+        <h2>Seu Prato</h2>
+        <div id="plate">
+            <i class="fas fa-plate-wheat"></i>
+            <div id="plate-content"></div>
+        </div>
+        
+        <div id="chart">
+            <!-- Gráfico será exibido aqui -->
+        </div>
+
+        <button onclick="calculateProgress()">Calcular Progresso</button>
+        <div id="progress"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

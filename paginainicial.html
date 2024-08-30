@@ -27,26 +27,14 @@
                 <input type="text" id="meals" name="meals" required>
             </div>
             <div class="form-group">
-                <label for="goal">Seu objetivo:</label>
-                <select id="goal" name="goal" required>
-                    <option value="">Selecione</option>
-                    <option value="gain">Ganhar Peso</option>
-                    <option value="lose">Perder Peso</option>
-                </select>
+                <div class="selection-container">
+                    <button onclick="location.href='ganharpeso.html'">Ganhar Peso</button>
+                    <button onclick="location.href='perderpeso.html'">Perder Peso</button>
+                </div>
             </div>
-            <button type="button" onclick="submitForm()">Enviar</button>
+            
         </form>
     </div>
 
-    <script>
-        function submitForm() {
-            const form = document.getElementById('user-form');
-            const goal = document.getElementById('goal').value;
-
-            if (goal) {
-                window.location.href = `recommendations.html?goal=${goal}`;
-            }
-        }
-    </script>
 </body>
 </html>
