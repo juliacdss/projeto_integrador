@@ -1,0 +1,188 @@
+/* Reset de margin e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Cor de fundo clara */
+    color: #333; /* Cor do texto */
+    line-height: 1.6;
+}
+
+/* Estilos do header e navbar */
+header {
+    background-color: #3b773b; /* Verde escuro */
+    color: white;
+    padding: 10px 20px;
+    
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos da logo */
+.logo a {
+    color: #fffdfd; /* Amarelo dourado */
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Estilos do botão de menu (hambúrguer) */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Estilos dos links do menu */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #cce5ff; /* Azul claro para destaque */
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #004d00; /* Verde mais escuro para o menu dropdown */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        border-top: 1px solid #003300; /* Linha fina superior */
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .nav-links a {
+        font-size: 1.2em;
+    }
+}
+
+/* Estilos da seção principal */
+section {
+    border-radius: 8px;
+    background: white;  
+}
+
+/* Estilo para o elemento <h1> com imagem de fundo */
+h1 {
+    background-image: url(images/banner.jpg); /* Caminho para a imagem */
+    background-size:auto; /* Ajusta o tamanho da imagem para cobrir o elemento */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    color: white; /* Cor do texto para contraste */
+    padding: 50px; /* Espaçamento interno para garantir que o texto não sobreponha as bordas do elemento */
+    text-align: center; /* Alinha o texto ao centro */
+    font-size: 2em; /* Tamanho da fonte */
+    margin: 0; /* Remove margens padrões */
+}
+
+
+/* Estilos dos parágrafos */
+section p {
+    margin-bottom: 20px;
+    display: flex;
+    margin: 3vw;
+    
+}
+
+/* Estilos das listas */
+section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    display: flex;
+    
+  
+
+}
+
+section li {
+    margin-bottom: 15px;
+    
+    
+    
+}
+
+section strong {
+    color: #004d00; /* Verde mais escuro para destaques */
+}
+/* Estilos da seção de benefícios */
+.beneficios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo de cada benefício */
+.beneficios {
+    background-color: white;
+    border: 1px solid #ddd; /*sombra*/
+    border-radius: 8px; /*sombra*/
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: calc(33% - 40px); /* Ajusta a largura dos quadrados com base na margem e padding */
+}
+
+/* Títulos dos benefícios */
+.beneficios strong {
+    color: #006400; /* Verde escuro */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Parágrafos dentro dos quadrados */
+.beneficios p {
+    font-size: 1em;
+    color: #666;
+}
