@@ -1,124 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ganhar Peso</title>
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Planejador de Refeições Saudáveis</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
-
 <body>
-    <div class="container">
-        <h1>Ganhar Peso</h1>
-        <h2>Café da manhã</h2>
-        <p>Escolha  os alimentos para o seu café da manhã</p>
-        <h3>Proteínas:</h3>
-        <div id="proteinas-opcoes" class="proteinas-opcoes">
-            <div class="food-item" data-food="ovos"><i class="ovo"></i>Ovos</div>
-            <div class="food-item" data-food="iogurte"><i class="Iogurte"></i>Iogurte Grego</div>
-            <div class="food-item" data-food="queijo"><i class="queijo"></i>Queijo</div>
-            <div class="food-item" data-food="leite"><i class="leite"></i>Leite</div>
-            <div class="food-item" data-food="amendoas"><i class="amendoas"></i>Amendoas</div>
-            <div class="food-item" data-food="queijo"><i class="queijo"></i>Queijo</div>
+    <header>
+
+        <div class="menu">
+
+            <nav>
+                <ul>
+                    <li><a href="paginainicial.html">Início</a></li>
+                    <li><a href="index.html">Café da manhã</a></li>
+                    <li><a href="index.html">Alomoço</a></li>
+                    <li><a href="index.html">Lanche da tarde</a></li>
+                    <li><a href="index.html">Janta</a></li>
+                
+                </ul>
+            </nav>
+        </div>
+       
+        <h1>Planeje suas refeições</h1>
+
+    </header>
+  
+
+    <section id="alimentos">
+        
+        <div class="ingredients">
+          <img src="images/icons8-apple-fruit-100.png" alt="Maçã" class="ingredient" data-name="Maçã">
+          <img src="images/icons8-banana-100.png" alt="Banana" class="ingredient" data-name="Banana">
+          <img src="images/icons8-bread-100.png" alt="Pão" class="ingredient" data-name="Pão">
         </div>
 
-        <h3>Carboidratos:</h3>
-        <div id="carboidratos-opcoes" class="carboidratos-opcoes">
-            <div class="food-item" data-food="pao"><i class="pao"></i>Pão Integral</div>
-            <div class="food-item" data-food="aveia"><i class="aveia"></i>Aveia</div>
-            <div class="food-item" data-food="granola"><i class="granola"></i>Granola</div>
-            <div class="food-item" data-food="banana"><i class="banana"></i>Banana</div>
-        </div>
-
-        <h3>Gorduras Saudáveis:</h3>
-        <div id="gorduras-opcoes" class="gorduras-opcoes">
-            <div class="food-item" data-food="abacate"><i class="abacate"></i>Abacate</div>
-            <div class="food-item" data-food="manteiga"><i class="manteiga"></i>Manteiga de Amendoim</div>
-            <div class="food-item" data-food="oleo"><i class="oleo"></i>Óleo de Coco</div>
-        </div>
-
-        <h2>Seu Prato</h2>
-        <div id="plate">
-            <i class="fas fa-plate-wheat"></i>
-            <div id="plate-content"></div>
-        </div>
-
-        <div id="chart">
-            <!-- Gráfico será exibido aqui -->
-        </div>
-
-        <h2>Almoço</h2>
-        <p>Escolha os alimentos para o seu almoço</p>
-        <h3>Proteínas:</h3>
-        <div id="proteinas-opcoes" class="proteinas-opcoes">
-            <div class="food-item" data-food="frango"><i class="frango"></i>Frango</div>
-            <div class="food-item" data-food="carne"><i class="carne"></i>Carne bovina</div>
-            <div class="food-item" data-food="peixe"><i class="peixe"></i>Peixe</div>
-            <div class="food-item" data-food="feijao"><i class="feijao"></i>Feijão</div>
-            
-        </div>
-
-        <h3>Carboidratos:</h3>
-        <div id="carboidratos-opcoes" class="carboidratos-opcoes">
-            <div class="food-item" data-food="arroz"><i class="arroz"></i>Arroz integral</div>
-            <div class="food-item" data-food="macarrao"><i class="macarrao"></i>Macarrão Integral</div>
-            <div class="food-item" data-food="quinoa"><i class="quinoa"></i>Quinoa</div>
-            <div class="food-item" data-food="batata"><i class="batata"></i>Batata doce</div>
-        </div>
-
-        <h3>Gorduras Saudáveis:</h3>
-        <div id="gorduras-opcoes" class="gorduras-opcoes">
-            <div class="food-item" data-food="azeite"><i class="azeite"></i>Azeite de Oliva</div>
-            <div class="food-item" data-food="abacate"><i class="abacate"></i>Abacate</div>
-            <div class="food-item" data-food="molho"><i class="molho"></i>Molho pesto</div>
-        </div>
-
-        <script src="script.js"></script>
-
-        <h2>Seu Prato</h2>
-        <div id="plate">
-            <i class="fas fa-plate-wheat"></i>
-            <div id="plate-content"></div>
-        </div>
-
-        <div id="chart">
-            <!-- Gráfico será exibido aqui -->
-        </div>
-
-        <h2>Lanche da Tarde</h2>
-        <p>Escolha os alimentos para o seu lanche da tarde</p>
-        <h3>Proteínas:</h3>
-        <div id="proteinas-opcoes" class="proteinas-opcoes">
-            <div class="food-item" data-food="frango"><i class="frango"></i>Frango</div>
-            <div class="food-item" data-food="carne"><i class="carne"></i>Carne bovina</div>
-            <div class="food-item" data-food="peixe"><i class="peixe"></i>Peixe</div>
-            <div class="food-item" data-food="feijao"><i class="feijao"></i>Feijão</div>
-            
-        </div>
-
-        <h3>Carboidratos:</h3>
-        <div id="carboidratos-opcoes" class="carboidratos-opcoes">
-            <div class="food-item" data-food="arroz"><i class="arroz"></i>Arroz integral</div>
-            <div class="food-item" data-food="macarrao"><i class="macarrao"></i>Macarrão Integral</div>
-            <div class="food-item" data-food="quinoa"><i class="quinoa"></i>Quinoa</div>
-            <div class="food-item" data-food="batata"><i class="batata"></i>Batata doce</div>
-        </div>
-
-        <h3>Gorduras Saudáveis:</h3>
-        <div id="gorduras-opcoes" class="gorduras-opcoes">
-            <div class="food-item" data-food="azeite"><i class="azeite"></i>Azeite de Oliva</div>
-            <div class="food-item" data-food="abacate"><i class="abacate"></i>Abacate</div>
-            <div class="food-item" data-food="molho"><i class="molho"></i>Molho pesto</div>
-        </div>
-
-
-        <button onclick="calculateProgress()">Calcular Progresso</button>
-        <div id="progress"></div>
-    </div>
-
-    <script src="js/main.js"></script>
+        <div class="prato">
+            <img src="images/icons8-plate-100.png" alt="Prato" class="plate-img">
+            <div id="armazenar-alimentos"></div>
+          </div>
+      
+      </section>
+    
+    
+    
+    <script src="script.js"></script>
 </body>
-
 </html>
