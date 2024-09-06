@@ -186,3 +186,27 @@ section strong {
     font-size: 1em;
     color: #666;
 }
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: auto; /* Ajusta a altura automaticamente de acordo com a imagem */
+    text-align: center;
+}
+
+.banner img {
+    width: 100%; /* Faz com que a imagem ocupe toda a largura do banner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.banner h1 {
+    color: #19490a;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 5rem;
+}
