@@ -1,4 +1,3 @@
-
 /*===============
     css reset
 =================*/
@@ -8,8 +7,9 @@
    margin: 0;
    vertical-align: baseline;
    list-style: none;
-   border: 0
+   border: 0;
 }
+
 /*===============
 formatação geral
 =================*/
@@ -19,116 +19,114 @@ html {
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    color: #043102;
    background-color: #bef0b7;
-
 }
 
-html body a {
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 20px;
+}
+
+a {
    text-decoration: none;
    color: #000000;
-
 }
 
-main {
-
-   margin: 0 13vw 0 13vw;
+a:hover {
+   text-decoration: underline;
 }
-
-
 
 /*===============
 formatacao do topo
 =================*/
 
-
 header {
    padding: 0 20px;
-  
- }
-
+   text-align: center;
+   margin-bottom: 20px;
+}
 
 .menu {
    background-color: green; 
    color: white; 
    padding: 10px 0; 
- }
- 
+}
 
- .menu nav ul {
+.menu nav ul {
    list-style: none;
    padding: 0;
    margin: 0; 
    display: flex; 
    justify-content: center; 
- }
- 
- .menu nav ul li {
-   margin: 0 15px 0 20px;
- }
- 
- .menu nav ul li a {
+   
+}
+
+.menu nav ul li {
+   margin: 0 15px;
+}
+
+.menu nav ul li a {
    color: rgb(255, 255, 255); 
    text-decoration: none; 
    font-weight: 600;
- }
- 
- .menu nav ul li a:hover {
+}
+
+.menu nav ul li a:hover {
    text-decoration: underline; 
- }
- 
- header h1 {
+}
+
+header h1 {
    margin: 20px 0;
-   text-align: center;
    font-size: 1.5em; 
- }
- 
- 
+}
 
 /*===============
-formatacao de ganhar peso
+ganhar peso 
 =================*/
 
-img {
-   width: 100px; 
-   height: auto; 
-        
+
+
+/*===============
+formatação dos alimentos e prato
+=================*/
+
+#alimentos {
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   gap: 20px;
 }
 
-body {
-   font-family: Arial, sans-serif;
-   
-   margin: 0;
-   padding: 20px;
-}
-
-header {
-   text-align: center;
-   margin-bottom: 20px;
-}
-
-#food-selection, #plate {
-   display: inline-block;
-   vertical-align: top;
-   width: 45%;
-   margin: 0 2.5%;
-}
-
-.food-category ul, #selected-foods {
-   list-style-type: none;
-   padding: 0;
-}
-
-.food-category li, #selected-foods li {
-   background-color: #fff;
-   margin: 5px 0;
-   padding: 10px;
+.ingredients img {
+   width: 40px;
+   height: auto;
    cursor: pointer;
-   border-radius: 5px;
-   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-#nutritionChart {
+.prato {
+   position: relative;
+   display: inline-block;
+}
+
+.plate-img {
+   width: 60vw;
+   height: auto;
+}
+
+#armazenar-alimentos {
+   position: absolute;
+   top: 0;
+   left: 0;
    width: 100%;
-   height: 300px;
+   height: 100%;
+   overflow: hidden;
+}
+
+.alimentos-no-prato {
+   width: 40px;
+   height: auto;
+   position: absolute;
+   transform: translate(-50%, -50%);
 }
 
 
