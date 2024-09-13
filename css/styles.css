@@ -1,9 +1,56 @@
-/* Reset de margin e padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/*  =============
+    css reset
+    =============*/
+
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 
 /* Estilos gerais do corpo */
 body {
@@ -176,11 +223,11 @@ section strong {
 
 /* Estilo de cada benefício */
 .beneficios {
-    background-color: white;
+    background-color: rgb(241, 255, 235);
     border: 1px solid #ddd; /*sombra*/
     border-radius: 8px; /*sombra*/
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 10px;
     margin: 10px;
     width: calc(33% - 40px); /* Ajusta a largura dos quadrados com base na margem e padding */
 }
@@ -195,38 +242,47 @@ section strong {
 
 /* Parágrafos dentro dos quadrados */
 .beneficios p {
-    font-size: 1em;
+    font-size: 1rem;
     color: #666;
 }
 
+/* Estilos da seção de benefícios */
+.beneficios2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo de cada benefício */
+.beneficios2 {
+    background-color: rgb(241, 255, 235);
+    border: 1px solid #ddd; /*sombra*/
+    border-radius: 8px; /*sombra*/
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px;
+    width: calc(33% - 40px); /* Ajusta a largura dos quadrados com base na margem e padding */
+}
+
+/* Títulos dos benefícios */
+.beneficios2 strong {
+    color: #006400; /* Verde escuro */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Parágrafos dentro dos quadrados */
+.beneficios2 p {
+    font-size: 1rem;
+    color: #666;
+}
 
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-}
-
-.container h1 {
-    color: #004d00;
-}
-
-.container p {
-    margin: 0 3vw 1vw 5vw;
-    text-align: center;
-}
-
-.user-form {
-    margin: 1vw 3vw 1vw 5vw;
-    text-align: center;
-    color: #003300;
-    font-weight: bold;
-}
-
-.form-group {
-    margin: 1vw 3vw 1vw 5vw;
-    text-align: center;
-}
-
-.html {
-    background-color: #edf7ed;
 }
