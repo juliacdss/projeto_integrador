@@ -76,32 +76,32 @@ header {
 
 /* Estilos para dispositivos móveis */
 @media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #004d00; /* Verde mais escuro para o menu dropdown */
-        position: absolute;
-        top: 60px;
-        left: 0;
-        border-top: 1px solid #003300; /* Linha fina superior */
+.nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #004d00; /* Verde mais escuro para o menu dropdown */
+    position: absolute;
+    top: 60px;
+    left: 0;
+    border-top: 1px solid #003300; /* Linha fina superior */
     }
 
-    .nav-links.active {
-        display: flex;
+.nav-links.active {
+    display: flex;
     }
 
-    .menu-toggle {
-        display: flex;
+.menu-toggle {
+    display: flex;
     }
 
-    .nav-links li {
-        margin: 10px 0;
-        text-align: center;
+.nav-links li {
+    margin: 10px 0;
+    text-align: center;
     }
 
-    .nav-links a {
-        font-size: 1.2em;
+.nav-links a {
+    font-size: 1.2em;
     }
 }
 
@@ -130,7 +130,6 @@ section p {
     margin-bottom: 20px;
     display: flex;
     margin: 3vw;
-    
 }
 
 /* Estilos das listas */
@@ -138,21 +137,33 @@ section ul {
     list-style-type: disc;
     margin-left: 20px;
     display: flex;
-    
-  
-
 }
 
 section li {
-    margin-bottom: 15px;
-    
-    
-    
+    margin-bottom: 15px; 
 }
 
 section strong {
     color: #004d00; /* Verde mais escuro para destaques */
 }
+
+.banner {
+    width: 100%;
+    height: auto; /* Ajusta a altura automaticamente de acordo com a imagem */
+    text-align: center;
+}
+
+.banner img {
+    width: 100%; /* Faz com que a imagem ocupe toda a largura do banner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.banner h1 {
+    color: #19490a;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 5rem;
+}
+
 /* Estilos da seção de benefícios */
 .beneficios {
     display: flex;
@@ -179,6 +190,7 @@ section strong {
     color: #006400; /* Verde escuro */
     font-size: 1.5em;
     margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Parágrafos dentro dos quadrados */
@@ -192,23 +204,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-}
-
-.banner {
-    width: 100%;
-    height: auto; /* Ajusta a altura automaticamente de acordo com a imagem */
-    text-align: center;
-}
-
-.banner img {
-    width: 100%; /* Faz com que a imagem ocupe toda a largura do banner */
-    height: auto; /* Mantém a proporção da imagem */
-}
-
-.banner h1 {
-    color: #19490a;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 5rem;
 }
 
 .container h1 {
