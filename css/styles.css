@@ -210,3 +210,28 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 5rem;
 }
+
+.container h1 {
+    color: #004d00;
+}
+
+.container p {
+    margin: 1vw 3vw 1vw 5vw;
+    text-align: center;
+}
+
+.user-form {
+    margin: 1vw 3vw 1vw 5vw;
+    text-align: center;
+    color: #003300;
+    font-weight: bold;
+}
+
+.form-group {
+    margin: 1vw 3vw 1vw 5vw;
+    text-align: center;
+}
+
+.html {
+    background-color: #edf7ed;
+}
