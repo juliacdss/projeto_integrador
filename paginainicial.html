@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vida Saudável</title>
-    <link rel="stylesheet" href="css/styles.css">
-    
-    
+    <link rel="stylesheet" href="css/inicio.css">
 </head>
-
-<header>
-    
+<body>
+    <header>
         <nav class="navbar">
             <div class="logo">
                 <a href="#">Alimentação</a>
@@ -29,9 +26,8 @@
                 <li><a href="#">Contato</a></li>
             </ul>
         </nav>
-</header>
-<body class="html">
-    <div class="container">
+    </header>
+    <main class="container">
         <h1>Bem-vindo ao Guia de Vida Saudável</h1>
         <p>A alimentação saudável é fundamental para manter o corpo e a mente em equilíbrio. Um regime alimentar equilibrado pode ajudar a prevenir doenças, melhorar o humor e aumentar a energia. É importante incluir uma variedade de alimentos ricos em nutrientes, como frutas, vegetais, proteínas magras e carboidratos integrais.</p>
         <p>Complete o formulário abaixo para receber recomendações personalizadas sobre sua alimentação.</p>
@@ -39,24 +35,24 @@
         <form id="user-form" class="user-form">
             <div class="form-group">
                 <label for="weight">Peso (kg):</label>
-                <input type="text" id="weight" name="weight" required>
+                <input type="number" id="weight" name="weight" required>
             </div>
             <div class="form-group">
                 <label for="height">Altura (cm):</label>
-                <input type="text" id="height" name="height" required>
+                <input type="number" id="height" name="height" required>
             </div>
             <div class="form-group">
                 <label for="meals">Quantas vezes se alimenta por dia:</label>
-                <input type="text" id="meals" name="meals" required>
+                <input type="number" id="meals" name="meals" required>
             </div>
             <div class="form-group">
-                <div class="selection-container">
-                    <button onclick="location.href='ganharpeso.html'">Ganhar Peso</button>
-                    <button onclick="location.href='perderpeso.html'">Perder Peso</button>
+                <div class="button-group">
+                    <button type="button" onclick="location.href='ganharpeso.html'">Ganhar Peso</button>
+                    <button type="button" onclick="location.href='perderpeso.html'">Perder Peso</button>
                 </div>
             </div>
         </form>
-    </div>
-
+    </main>
+    <script src="js/script.js"></script>
 </body>
 </html>
