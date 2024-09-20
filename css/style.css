@@ -85,48 +85,46 @@ ganhar peso
 =================*/
 
 
-
-/*===============
-formatação dos alimentos e prato
-=================*/
-
-#alimentos {
+.gallery {
    display: flex;
-   justify-content: center;
-   align-items: flex-start;
-   gap: 20px;
+   justify-content: space-around;
+   flex-wrap: wrap;
 }
 
-.ingredients img {
-   width: 40px;
-   height: auto;
-   cursor: pointer;
-}
-
-.prato {
+.dish {
    position: relative;
-   display: inline-block;
+   margin: 15px;
 }
 
-.plate-img {
-   width: 60vw;
+.dish-img {
+   width: 200px;
    height: auto;
+   border-radius: 8px;
+   transition: transform 0.2s;
 }
 
-#armazenar-alimentos {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   overflow: hidden;
+.dish:hover .dish-img {
+   transform: scale(1.05);
 }
 
-.alimentos-no-prato {
-   width: 40px;
-   height: auto;
+.info {
+   display: none;
    position: absolute;
+   background-color: rgba(255, 255, 255, 0.9);
+   border: 1px solid #ccc;
+   padding: 10px;
+   border-radius: 8px;
+   width: 250px;
+   top: 50%; 
+   left: 50%; 
    transform: translate(-50%, -50%);
 }
 
+.dish:hover .info {
+   display: block;
+}
 
+footer {
+   text-align: center;
+   margin-top: 20px;
+}

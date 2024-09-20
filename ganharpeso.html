@@ -3,49 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planejador de Refeições Saudáveis</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Vida Saudável - Pratos Interativos</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-
-        <div class="menu">
-
-            <nav>
-                <ul>
-                    <li><a href="pagina2.html">Início</a></li>
-                    <li><a href="#ingredients-cafe">Café da manhã</a></li>
-                    <li><a href="#ingredients-almoco">Almoço</a></li>
-                    <li><a href="#ingredients-lanche">Lanche da tarde</a></li>
-                    <li><a href="#ingredients-janta">Janta</a></li>
-                
-                </ul>
-            </nav>
-        </div>
-       
-        <h1>Planeje suas refeições</h1>
-
+        <h1>Opções de Pratos Saudáveis</h1>
+        <p>Passe o mouse sobre os pratos para ver ingredientes e benefícios nutricionais.</p>
     </header>
-  
 
-    <section id="cafe">
+    <section class="gallery">
+        <div class="dish" onmouseover="showInfo('dish1')" onmouseout="hideInfo('dish1')">
+            <img src="images/prato1.jpg" alt="Prato Vegano" class="dish-img">
+            <div class="info" id="dish1">
+                <h3>Prato Vegano de Grão-de-bico</h3>
+                <p><strong>Ingredientes:</strong> Grão-de-bico, quinoa, brócolis.</p>
+                <p><strong>Benefícios:</strong> Rico em proteínas e fibras.</p>
+                <table>
+                    <tr><td>Calorias:</td><td>350</td></tr>
+                    <tr><td>Gorduras:</td><td>10g</td></tr>
+                    <tr><td>Proteínas:</td><td>20g</td></tr>
+                    <tr><td>Carboidratos:</td><td>50g</td></tr>
+                </table>
+            </div>
+        </div>
         
-        <div class="ingredients">
-            <h2>Café da manhã:</h2>
-          <img src="images/icons8-apple-fruit-100.png" alt="Maçã" class="ingredient" data-name="Maçã">
-          <img src="images/icons8-banana-100.png" alt="Banana" class="ingredient" data-name="Banana">
-          <img src="images/icons8-bread-100.png" alt="Pão" class="ingredient" data-name="Pão">
+        <div class="dish" onmouseover="showInfo('dish2')" onmouseout="hideInfo('dish2')">
+            <img src="images/prato2.jpg" alt="Salada Colorida" class="dish-img">
+            <div class="info" id="dish2">
+                <h3>Salada Colorida</h3>
+                <p><strong>Ingredientes:</strong> Alface, tomate, cenoura, abacate.</p>
+                <p><strong>Benefícios:</strong> Rica em vitaminas e antioxidantes.</p>
+                <table>
+                    <tr><td>Calorias:</td><td>150</td></tr>
+                    <tr><td>Gorduras:</td><td>5g</td></tr>
+                    <tr><td>Proteínas:</td><td>3g</td></tr>
+                    <tr><td>Carboidratos:</td><td>15g</td></tr>
+                </table>
+            </div>
         </div>
 
-        <div class="prato">
-            <img src="images/image-removebg-preview.png" alt="Prato" class="plate-img">
-            <div id="armazenar-alimentos"></div>
-          </div>
-      
-      </section>
-    
-    
-    
-    <script src="js/main.js"></script>
+    </section>
+
+    <footer>
+        <p>© 2024 Vida Saudável</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
