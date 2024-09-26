@@ -51,6 +51,7 @@ table {
 	border-spacing: 0;
 }
 
+/* FORMATAÇÃO */
 
 /* Estilos gerais do corpo */
 body {
@@ -58,6 +59,12 @@ body {
     background-color: #f4f4f4; /* Cor de fundo clara */
     color: #333; /* Cor do texto */
     line-height: 1.6;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 /* Estilos do header e navbar */
@@ -171,6 +178,22 @@ h1 {
     margin: 0; /* Remove margens padrões */
 }
 
+.banner {
+    width: 100%;
+    height: auto; /* Ajusta a altura automaticamente de acordo com a imagem */
+    text-align: center;
+}
+
+.banner img {
+    width: 100%; /* Faz com que a imagem ocupe toda a largura do banner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.banner h1 {
+    color: #19490a;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 5rem;
+}
 
 /* Estilos dos parágrafos */
 section p {
@@ -191,98 +214,44 @@ section li {
 }
 
 section strong {
-    color: #004d00; /* Verde mais escuro para destaques */
+    color: #004d00; /* Verde mais escuro para destacar */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
 }
 
-.banner {
-    width: 100%;
-    height: auto; /* Ajusta a altura automaticamente de acordo com a imagem */
-    text-align: center;
-}
-
-.banner img {
-    width: 100%; /* Faz com que a imagem ocupe toda a largura do banner */
-    height: auto; /* Mantém a proporção da imagem */
-}
-
-.banner h1 {
-    color: #19490a;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 5rem;
-}
-
-/* Estilos da seção de benefícios */
-.beneficios {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Estilo de cada benefício */
-.beneficios {
+.beneficio {
     background-color: rgb(241, 255, 235);
-    border: 1px solid #ddd; /*sombra*/
-    border-radius: 8px; /*sombra*/
+    border: 1px solid #ddd;
+    border-radius: 8px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     padding: 10px;
     margin: 10px;
-    width: calc(33% - 40px); /* Ajusta a largura dos quadrados com base na margem e padding */
+    cursor: pointer; /* interatividade */
+    transition: background-color 0.3s;
 }
 
-/* Títulos dos benefícios */
-.beneficios strong {
-    color: #006400; /* Verde escuro */
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+.beneficio:hover {
+    background-color: #e0f7e0; /* Cor quando o mouse */
 }
 
-/* Parágrafos dentro dos quadrados */
-.beneficios p {
-    font-size: 1rem;
-    color: #666;
+.beneficio-texto {
+    display: none; /* Esconde o texto dos benefícios */
 }
 
-/* Estilos da seção de benefícios */
-.beneficios2 {
+.beneficio.active .beneficio-texto {
+    display: block; /* Mostra o texto se a classe active estiver presente */
+}
+
+.beneficio-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    max-width: 1200px; /* Define uma largura máxima para evitar que os itens fiquem muito espalhados */
+    margin: 0 auto; /* Centraliza o container em relação à página */
 }
 
-/* Estilo de cada benefício */
-.beneficios2 {
-    background-color: rgb(241, 255, 235);
-    border: 1px solid #ddd; /*sombra*/
-    border-radius: 8px; /*sombra*/
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    margin: 10px;
-    width: calc(33% - 40px); /* Ajusta a largura dos quadrados com base na margem e padding */
-}
-
-/* Títulos dos benefícios */
-.beneficios2 strong {
-    color: #006400; /* Verde escuro */
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Parágrafos dentro dos quadrados */
-.beneficios2 p {
-    font-size: 1rem;
-    color: #666;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+.fortalecimento {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha */
 }
