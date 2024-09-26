@@ -1,8 +1,15 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.getElementById('menu-toggle');
-    const navLinks = document.getElementById('nav-links');
+document.addEventListener('DOMContentLoaded', () => {
+    const beneficios = document.querySelectorAll('.beneficio');
 
-    menuToggle.addEventListener('click', function() {
-        navLinks.classList.toggle('active');
+    beneficios.forEach(beneficio => {
+        beneficio.addEventListener('click', () => {
+            beneficio.classList.toggle('active');
+            const texto = beneficio.querySelector('.beneficio-texto');
+            if (texto.style.display === 'block') {
+                texto.style.display = 'none';
+            } else {
+                texto.style.display = 'block';
+            }
+        });
     });
 });
