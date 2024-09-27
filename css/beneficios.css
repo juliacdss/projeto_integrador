@@ -54,9 +54,14 @@ table {
 /* FORMATAÇÃO */
 
 /* Estilos gerais do corpo */
+
+html{
+    background-color: #bef0b7;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4; /* Cor de fundo clara */
+    background-color: #bef0b7; /* Cor de fundo clara */
     color: #333; /* Cor do texto */
     line-height: 1.6;
 }
@@ -84,13 +89,13 @@ header {
 
 /* Estilos da logo */
 .logo a {
-    color: #fffdfd; /* Amarelo dourado */
+    color: #fffdfd; 
     text-decoration: none;
     font-size: 1.5em;
     font-weight: bold;
 }
 
-/* Estilos do botão de menu (hambúrguer) */
+/* Estilos do botão de menu */
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -100,7 +105,7 @@ header {
 .bar {
     width: 30px;
     height: 3px;
-    background-color: white;
+    background-color: #bef0b7;
     margin: 5px 0;
     border-radius: 5px;
 }
@@ -162,7 +167,7 @@ header {
 /* Estilos da seção principal */
 section {
     border-radius: 8px;
-    background: white;  
+    background: #bef0b7;  
 }
 
 /* Estilo para o elemento <h1> com imagem de fundo */
@@ -220,7 +225,7 @@ section strong {
 }
 
 .beneficio {
-    background-color: rgb(241, 255, 235);
+    background-color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
@@ -254,4 +259,6 @@ section strong {
     display: flex;
     justify-content: center; /* Centraliza os itens horizontalmente */
     flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha */
+    max-width: 1200px; /* Define uma largura máxima para evitar que os itens fiquem muito espalhados */
+    margin: 0 auto; /* Centraliza o container em relação à página */
 }
