@@ -141,6 +141,7 @@ footer {
 .dish {
    margin: 10px;
    width: 200px;
+   cursor: pointer;
 }
 
 h2 {
@@ -175,4 +176,18 @@ td {
 
 th {
    background-color: #f2f2f2;
+}
+
+.wrap{
+   display: flex;
+}
+
+.titles{
+   display: flex;
+   justify-content: space-around;
+}
+
+.container-cafe-lanche{
+   display: flex;
+   justify-content: space-evenly;
 }
