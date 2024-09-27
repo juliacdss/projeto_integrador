@@ -47,18 +47,18 @@ header {
 }
 
 .menu {
-   background-color: green; 
-   color: white; 
-   padding: 10px 0; 
+   background-color: green;
+   color: white;
+   padding: 10px 0;
 }
 
 .menu nav ul {
    list-style: none;
    padding: 0;
-   margin: 0; 
-   display: flex; 
-   justify-content: center; 
-   
+   margin: 0;
+   display: flex;
+   justify-content: center;
+
 }
 
 .menu nav ul li {
@@ -66,18 +66,18 @@ header {
 }
 
 .menu nav ul li a {
-   color: rgb(255, 255, 255); 
-   text-decoration: none; 
+   color: rgb(255, 255, 255);
+   text-decoration: none;
    font-weight: 600;
 }
 
 .menu nav ul li a:hover {
-   text-decoration: underline; 
+   text-decoration: underline;
 }
 
 header h1 {
    margin: 20px 0;
-   font-size: 1.5em; 
+   font-size: 1.5em;
 }
 
 /*===============
@@ -110,14 +110,15 @@ ganhar peso
 .info {
    display: none;
    position: absolute;
-   background-color: rgba(255, 255, 255, 0.9);
+   background-color: rgba(34, 97, 19, 0.9);
    border: 1px solid #ccc;
    padding: 10px;
    border-radius: 8px;
    width: 250px;
-   top: 50%; 
-   left: 50%; 
+   top: 50%;
+   left: 50%;
    transform: translate(-50%, -50%);
+   color: rgb(207, 245, 202);
 }
 
 .dish:hover .info {
@@ -132,22 +133,46 @@ footer {
 
 .dish-container {
    display: flex;
-   justify-content: center; 
-   flex-wrap: wrap;
+   justify-content: center;
    margin-bottom: 20px;
    margin-top: 10px;
 }
 
 .dish {
    margin: 10px;
-   width: 200px; 
+   width: 200px;
 }
 
 h2 {
    margin-top: 40px;
-   margin-bottom: 10px; 
-   text-align: center; 
-   font-size: 24px; 
+   margin-bottom: 20px;
+   text-align: center;
+   font-size: 20px;
    color: #333;
+
+
+
 }
 
+section.gallery {
+
+   display: block;
+}
+
+table {
+   width: 100%;
+   border-collapse: collapse;
+   margin-top: 10px;
+}
+
+table,
+th,
+td {
+   border: 1px solid #ccc;
+   padding: 8px;
+   text-align: left;
+}
+
+th {
+   background-color: #f2f2f2;
+}
