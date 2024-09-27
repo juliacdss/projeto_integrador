@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vida Saudável - Pratos Interativos</title>
+    <link rel="stylesheet" href="css/peso.css">
+</head>
+<body>
+    <header>
+        <h1>Pratos Saudáveis para Restrições Alimentares</h1>
+        <p>Coloque o mouse sobre o prato e veja as informações sobre o prato.</p>
+    </header>
+    <main>
+    <section class="gallery">
+        <div class="cafe">
+        <h2>Café Da Manhã</h2>
+        <div class="dish" onmouseover="showInfo('dish1')" onmouseout="hideInfo('dish1')">
+            <img src="images/fotor-ai-20240926101621-removebg-preview.png" alt="Morango e Aveia" class="dish-img">
+            <div class="info" id="dish1"> 
+                <h3>Aveia com Frutas</h3> 
+                <p><strong>Ingredientes:</strong> Aveia, banana e morangos.</p> 
+                <p><strong>Benefícios:</strong> Fonte de fibras, vitaminas e minerais.</p>
+                <table>
+                    <tr><td>Calorias:</td><td>311</td></tr> 
+                    <tr><td>Gorduras:</td><td>4,1g</td></tr>
+                    <tr><td>Proteínas:</td><td>7,8g</td></tr>
+                    <tr><td>Carboidratos:</td><td>63g</td></tr>
+                </table>
+            </div> 
+        </div>
+        <div class="dish" onmouseover="showInfo('dish2')" onmouseout="hideInfo('dish2')">
+            <img src="images/thayna9.png" alt="Ovos Mexidos" class="dish-img">
+            <div class="info" id="dish2">
+                <h3>Ovos Mexidos</h3>
+                <p><strong>Ingredientes:</strong>Ovos (Porção de 2 Ovos).</p>
+                <p><strong>Benefícios:</strong> Rico em proteínas, baixo custo e aumentam a saciedade.</p>
+                <table> 
+                    <tr><td>Calorias:</td><td>140</td></tr>
+                    <tr><td>Gorduras:</td><td>10g</td></tr>
+                    <tr><td>Proteínas:</td><td>12g</td></tr>
+                    <tr><td>Carboidratos:</td><td>1g</td></tr> 
+                </table>
+            </div> 
+        </div>
+        </div>
+        <h2>Lanche Da Tarde</h2>
+        <div class="dish" onmouseover="showInfo('dish3')" onmouseout="hideInfo('dish3')">
+            <img src="images/thayna8.png" alt="Smoothie de Frutas Vermelhas" class="dish-img">
+            <div class="info" id="dish3">
+                <h3>Smoothie de Frutas Vermelhas</h3>
+                <p><strong>Ingredientes:</strong> 1 xícara de frutas vermelhas, 1/2 banana, 1/2 xícara de iogurte natural, 1 colher de chia, 1 xícara de água e gelo a gosto.</p> <p><strong>Benefícios:</strong> Riqueza em Antioxidantes, baixo em calorias, Fonte de Fibras e Proteínas.</p> <table>
+                    <tr><td>Calorias:</td><td>250</td></tr>
+                    <tr><td>Gorduras:</td><td>6g</td></tr>
+                    <tr><td>Proteínas:</td><td>10g</td></tr>
+                    <tr><td>Carboidratos:</td><td>40g</td></tr>
+                </table>
+            </div>
+        </div>
+        <div class="dish" onmouseover="showInfo('dish4')" onmouseout="hideInfo('dish4')">
+            <img src="images/thayna7.png" alt="Iogurte com Frutas e Chia" class="dish-img">
+            <div class="info" id="dish4">
+                <h3>Iogurte com Frutas e Chia</h3>
+                <p><strong>Ingredientes:</strong> Iogurte natural sem açúcar, Frutas e Chia.</p>
+                <p><strong>Benefícios:</strong> Rico em Proteínas, Probióticos e Fibras.</p>
+                <table>device-width
+                    <tr><td>Calorias:</td><td>250</td></tr>
+                    <tr><td>Gorduras:</td><td>8g</td></tr>
+                    <tr><td>Proteínas:</td><td>15g</td></tr>
+                    <tr><td>Carboidratos:</td><td>30g</td></tr>
+                </table>
+            </div>
+        </div>
+        <h2>Almoço</h2>
+        <div class="dish" onmouseover="showInfo('dish5')" onmouseout="hideInfo('dish5')">
+            <img src="images/thayna6.png" alt="Salada Colorida" class="dish-img">
+            <div class="info" id="dish5">
+                <h3>Salada Colorida</h3>
+                <p><strong>Ingredientes:</strong> Alface ou Rúcula, Tomate, Pepino e Grão de Bico.</p>
+                <p><strong>Benefícios:</strong> Baixo em calorias, Rica em nutrientes e fibras.</p>
+                <table>
+                    <tr><td>Calorias:</td><td>155</td></tr>
+                    <tr><td>Gorduras:</td><td>2,4g</td></tr>
+                    <tr><td>Proteínas:</td><td>7,8g</td></tr>
+                    <tr><td>Carboidratos:</td><td>28g</td></tr>
+                </table>
+            </div>
+        </div>
+        <div class="dish" onmouseover="showInfo('dish6')" onmouseout="hideInfo('dish6')">
+            <img src="images/thayna5.png" alt="Peixe Grelhado" class="dish-img">
+            <div class="info" id="dish6">
+                <h3>Peixe Grelhado com Aspargos e Batata Doce</h3>
+                <p><strong>Ingredientes:</strong>Filé de Peixe (Salmão ou Tilápia), Aspargos e Batata Doce.</p>
+                <p><strong>Benefícios:</strong> Rico em Proteínas, Baixo Índice Glicêmico e Variedade de Nutrientes.</p>
+                <table>
+                    <tr><td>Calorias:</td><td>405</td></tr>
+                    <tr><td>Gorduras:</td><td>10,4g</td></tr>
+                    <tr><td>Proteínas:</td><td>34,2g</td></tr>
+                    <tr><td>Carboidratos:</td><td>34,7g</td></tr>
+                </table>
+            </div>
+        </div>
+        <div class="dish" onmouseover="showInfo('dish7')" onmouseout="hideInfo('dish7')">
+            <img src="images/thayna12.png" alt="Purê com Carne Moída" class="dish-img"> 
+            <div class="info" id="dish7"> 
+                <h3>Purê de Batata com Carne Moída</h3> 
+                <p><strong>Ingredientes:</strong> Batata, Carne Moída, Alface e Tomate.</p> 
+                <p><strong>Benefícios:</strong> A combinação de carboidratos, proteínas e fibras torna a refeição completa e saciante.</p> 
+                <table> 
+                    <tr><td>Calorias:</td><td>477</td></tr> 
+                    <tr><td>Gorduras:</td><td>25g</td></tr> 
+                    <tr><td>Proteínas:</td><td>32g</td></tr> 
+                    <tr><td>Carboidratos:</td><td>43g</td></tr> 
+                </table>
+            </div>
+        </div>
+        <div class="dish" onmouseover="showInfo('dish8')" onmouseout="hideInfo('dish8')">
+            <img src="images/thayna3.png" alt="Salmão" class="dish-img">
+            <div class="info" id="dish8">
+                <h3>Salmão Grelhado com Tomate, Brócolis e Pepino</h3>
+                <p><strong>Ingredientes:</strong> Salmão, Tomate, Brócolis e Pepino.</p>
+                <p><strong>Benefícios:</strong> Rico em Ômega-3, Alto em Proteínas.</p>
+                <table>
+                    <tr><td>Calorias:</td><td>349</td></tr>
+                    <tr><td>Gorduras:</td><td>18,7g</td></tr>
+                    <tr><td>Proteínas:</td><td>34,6g</td></tr>
+                    <tr><td>Carboidratos:</td><td>14,5g</td></tr>
+                </table>
+            </div>
+        </div>
+        <h2>Jantar</h2>
+        <div class="dish" onmouseover="showInfo('dish9')" onmouseout="hideInfo('dish9')">
+            <img src="images/thayna4.png" alt="Frango Grelhado" class="dish-img">
+            <div class="info" id="dish9">
+                <h3>Frango Grelhado com Arroz Integral e Brócolis</h3>
+                <p><strong>Ingredientes:</strong> Peito de frango, Arroz integral e Brócolis.</p>
+                <p><strong>Benefícios:</strong> Rico em proteínas e fibras.</p>
+                <table>
+                    <tr><td>Calorias:</td><td>394</td></tr>
+                    <tr><td>Gorduras:</td><td>6,3g</td></tr>
+                    <tr><td>Proteínas:</td><td>51,6g</td></tr>
+                    <tr><td>Carboidratos:</td><td>30g</td></tr>
+                </table>
+            </div> 
+        </div>
+        <div class="dish" onmouseover="showInfo('dish10')" onmouseout="hideInfo('dish10')">
+            <img src="images/thayna10.png" alt="Bowl de Salada com Frango" class="dish-img">
+            <div class="info" id="dish10">
+                <h3>Bowl de Salada com Frango</h3>
+                <p><strong>Ingredientes:</strong> Alface, Frango e Molho(2 colheres de Iogurte grego desnatado natural, 1 Limão, Sal e 2 colheres de Azeite).</p>
+                <p><strong>Benefícios:</strong> Refeição leve e nutritiva, Baixa em calorias.</p>
+                <table>
+                    <tr><td>Calorias:</td><td>300</td></tr>
+                    <tr><td>Gorduras:</td><td>11g</td></tr>
+                    <tr><td>Proteínas:</td><td>30g</td></tr> 
+                    <tr><td>Carboidratos:</td><td>20g</td></tr>
+                </table>
+            </div> 
+        </div>
+        <div class="dish" onmouseover="showInfo('dish11')" onmouseout="hideInfo('dish11')">
+            <img src="images/thayna11.png" alt="Sanduíche de Atum" class="dish-img">
+            <div class="info" id="dish11">
+                <h3>Sanduíche de Atum</h3>
+                <p><strong>Ingredientes:</strong> Pão integral, Atum desfiado e Alface.</p>
+                <p><strong>Benefícios:</strong> Rico em ômega-3, Fibras, Nutrientes e Baixo em calorias.</p>
+                <table>
+                    <tr><td>Calorias:</td><td>271</td></tr> 
+                    <tr><td>Gorduras:</td><td>3g</td></tr> 
+                    <tr><td>Proteínas:</td><td>34g</td></tr> 
+                    <tr><td>Carboidratos:</td><td>28g</td></tr> 
+                </table> 
+            </div> 
+        </div>
+        <div class="dish" onmouseover="showInfo('dish12')" onmouseout="hideInfo('dish12')">
+            <img src="images/thayna1.png" alt="Sopa de Legumes" class="dish-img">
+            <div class="info" id="dish12">
+                <h3>Sopa de Legumes</h3>
+                <p><strong>Ingredientes:</strong> Cenoura, Abobrinha, Pepino, Cebola, Alho e Temperos e outros Legumes.</p>
+                <p><strong>Benefícios:</strong> Baixa em Calorias, Rica em Nutrientes, Fibras e Hidratação.</p>
+                <table>
+                    <tr><td>Calorias:</td><td>70</td></tr>
+                    <tr><td>Gorduras:</td><td>1g</td></tr>
+                    <tr><td>Proteínas:</td><td>2g</td></tr>
+                    <tr><td>Carboidratos:</td><td>15g</td></tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <p>© 2024 Vida Saudável</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
