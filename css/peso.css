@@ -181,6 +181,7 @@ th {
 /*perder peso*/
 .wrap{
    display: flex;
+   justify-content: space-evenly;
 }
 
 .titles{
