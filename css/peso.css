@@ -16,13 +16,17 @@ formatação geral
 
 html {
    font-size: calc(5px + 1vw);
-   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-family: "Fredoka", sans-serif;
    color: #043102;
    background-color: #bef0b7;
 }
 
 body {
-   font-family: Arial, sans-serif;
+   font-family: "Fredoka", sans-serif;
+   font-optical-sizing: auto;
+   font-weight:normal;
+   font-style: normal;
+   font-variation-settings: "wdth"100;
    margin: 0;
    padding: 20px;
 }
