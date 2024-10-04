@@ -1,0 +1,12 @@
+html, body {
+ 
+}
+
+div.equipe {
+    display: flex;
+   
+}
+.nomes{
+    display: flex;
+    justify-content: space-evenly;
+}
