@@ -1,0 +1,84 @@
+
+body {
+
+    background-color: #d8ffd8;
+
+}
+
+header {
+    background-color: #3b773b; /* Verde escuro */
+    color: white;
+    padding: 15px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #2a5d2a;
+    border-radius: 5px;
+}
+
+h1 {
+
+    text-align: center;
+    margin: 6vw 0 5vw 0;
+
+}
+
+
+main p.inicio {
+
+    text-align: center;
+    font-size: 20px;
+    margin: 5vw 0 5vw 0;
+}
+
+.dicas {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; }
+
+.item {
+    width: 48%;
+    list-style: none; 
+}
+
+h2 {
+    margin: 0; 
+}
+
+footer {
+
+    text-align: center;
+}
