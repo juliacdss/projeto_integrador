@@ -1,10 +1,14 @@
-html, body {
- 
-}
 
 div.equipe {
     display: flex;
-   
+}
+div.equipe img{
+    width: 350px; 
+    height: 350px;
+}
+h1 {
+    text-align: center;
+    color: blueviolet;
 }
 .nomes{
     display: flex;
