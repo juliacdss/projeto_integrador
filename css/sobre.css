@@ -95,4 +95,51 @@ body {
         display: flex;
     }
 }
+/* Estilos para a seção "Sobre Nós" */
+.sobre {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.missao, .historia {
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.equipe {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.equipe img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.equipe img:hover {
+    transform: scale(1.05); /* Aumenta a imagem quando passa o mouse */
+}
+
+.equipe img.clicked {
+    transform: translateY(-10px); /* Levanta a imagem quando clicada */
+}
+
 
