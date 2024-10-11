@@ -1,14 +1,17 @@
 
 body {
-
     background-color: #d8ffd8;
-
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    line-height: 1.6;
 }
 
+
 header {
-    background-color: #3b773b; /* Verde escuro */
-    color: white;
-    padding: 15px 20px;
+    background-color: #3b773b;
+    color: #c8ecea;
+    padding: 20px 10%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .navbar {
@@ -18,9 +21,10 @@ header {
 }
 
 .logo a {
-    color: white;
-    font-size: 1.5em;
+    color: #c8ecea;
+    font-size: 2em;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .menu-toggle {
@@ -33,52 +37,126 @@ header {
 }
 
 .nav-links li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 .nav-links a {
-    color: white;
+    color: #c8ecea;
     text-decoration: none;
     font-weight: bold;
-    padding: 5px 10px;
-    transition: background-color 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .nav-links a:hover {
     background-color: #2a5d2a;
-    border-radius: 5px;
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
 }
 
+/* Estilos de Títulos */
 h1 {
-
     text-align: center;
-    margin: 6vw 0 5vw 0;
-
-}
-
-
-main p.inicio {
-
-    text-align: center;
-    font-size: 20px;
-    margin: 5vw 0 5vw 0;
-}
-
-.dicas {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px; }
-
-.item {
-    width: 48%;
-    list-style: none; 
+    margin: 5vw 0;
+    font-size: 2.5vw;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 h2 {
-    margin: 0; 
+    margin: 0;
+    color: #308b1d;
 }
 
-footer {
+div.logo a {
+
+    font-size: medium;
+}
+
+p.inicio {
 
     text-align: center;
+    color: #2a5d2a;
+    font-size: 1.5vw;
+    margin: 5vw 0 5vw 0;
+}
+
+/* Estilos de Parágrafos */
+.main p.inicio {
+    text-align: center;
+    font-size: 4vw;
+    font-weight: bold;
+    color: #208120;
+}
+
+/* Estilos de Listas */
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+li h2 span {
+    color: #288529;
+}
+
+li p {
+    color: #2a5d2a;
+    font-size: 1vw;
+}
+
+/* Estilos das Dicas */
+.dicas {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px; 
+    flex-wrap: wrap; /* Permite que os itens quebrem em telas menores */
+    margin: 5vw 5vw 5vw 5vw;
+}
+
+.item {
+    width: calc(48% - 10px); /* Largura responsiva */
+    margin-bottom: 20px; /* Espaçamento entre itens */
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.item:hover {
+    transform: translateY(-3px); /* Levanta o item ao passar o mouse */
+}
+
+/* Estilo do Rodapé */
+footer {
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+/* Estilos Gerais */
+main {
+    margin: 20px 5%;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column; /* Empilha links em telas menores */
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .dicas {
+        flex-direction: column; /* Empilha dicas em telas menores */
+        align-items: center;
+    }
+
+    .item {
+        width: 90%; /* Largura maior para dispositivos móveis */
+    }
 }
