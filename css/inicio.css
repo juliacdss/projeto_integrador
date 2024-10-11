@@ -6,31 +6,45 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #edf7ed;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Fundo suave */
     color: #333;
 }
 
+/* Estilo do cabeçalho */
 header {
-    background-color: #3b773b; 
+    background-image: url('caminho/para/sua/imagem.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
     color: white;
-    padding: 10px 20px;
+    padding: 20px 0; /* Espaço para o menu */
+    text-align: center;
+    position: relative;
 }
 
+.header-title {
+    margin-top: 20px; /* Espaço entre o menu e o título */
+}
+
+.header-title h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.header-title p {
+    font-size: 1.2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo da navegação */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.logo a {
-    color: white;
-    font-size: 1.5em;
-    text-decoration: none;
-}
-
-.menu-toggle {
-    display: none;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 1; /* Para garantir que o menu fique acima da imagem de fundo */
 }
 
 .nav-links {
@@ -46,85 +60,56 @@ header {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    padding: 5px 10px;
-    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    background-color: #2a5d2a;
-    border-radius: 5px;
+    color: #d0e8d0; /* Cor clara para hover */
 }
 
+/* Estilo do container principal */
 .container {
     max-width: 1200px;
     margin: 20px auto;
     padding: 0 15px;
-    text-align: center;
 }
 
-h1 {
-    color: #004d00;
-    margin-bottom: 20px;
-}
-
-p {
-    margin-bottom: 20px;
-    font-size: 1.1em;
-}
-
-.user-form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
-    max-width: 500px;
-}
-
-.form-group {
-    margin-bottom: 15px;
-    text-align: left;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.form-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1em;
-}
-
-.button-group {
+/* Estilo das características */
+.features {
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    justify-content: space-around;
+    padding: 40px 0;
+    background-color: white; /* Fundo branco */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.button-group button {
-    background-color: #4CAF50; /* Verde */
-    color: white;
-    border: none;
-    padding: 15px 25px;
+.feature {
+    text-align: center;
+    width: 30%;
+}
+
+.feature h3 {
+    margin-bottom: 10px;
+    color: #3b773b; /* Verde escuro */
+}
+
+.feature p {
     font-size: 1em;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-.button-group button:hover {
-    background-color: #45a049;
+/* Estilo do rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
 }
 
+/* Responsividade */
 @media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-        cursor: pointer;
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .nav-links {
@@ -134,5 +119,15 @@ p {
 
     .nav-links.active {
         display: flex;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 80%;
+        margin-bottom: 20px;
     }
 }

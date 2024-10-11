@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vida Saudável</title>
     <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/menu.css">
 </head>
 <body>
     <header>
@@ -26,42 +27,30 @@
                 <li><a href="#">Contato</a></li>
             </ul>
         </nav>
+        <div class="header-title">
+            <h1>Vida Saudável</h1>
+            <p>Descubra um novo jeito de se alimentar.</p>
+        </div>
     </header>
     <main class="container">
-        <h1>Bem-vindo ao Guia de Vida Saudável</h1>
-        <p>A alimentação saudável é fundamental para manter o corpo e a mente em equilíbrio. Um regime alimentar equilibrado pode ajudar a prevenir doenças, melhorar o humor e aumentar a energia. É importante incluir uma variedade de alimentos ricos em nutrientes, como frutas, vegetais, proteínas magras e carboidratos integrais.</p>
-        <p>Complete o formulário abaixo para receber recomendações personalizadas sobre sua alimentação.</p>
-
-        <form id="user-form" class="user-form">
-            <div class="form-group">
-                <label for="weight">Peso (kg):</label>
-                <input type="number" id="weight" name="weight" required>
+        <section class="features">
+            <div class="feature">
+                <h3>Cardápios Personalizados</h3>
+                <p>Encontre opções que se adaptam ao seu estilo de vida.</p>
             </div>
-            <div class="form-group">
-                <label for="height">Altura (cm):</label>
-                <input type="number" id="height" name="height" required>
+            <div class="feature">
+                <h3>Dicas de Saúde</h3>
+                <p>Aprenda a manter uma alimentação saudável com nossas dicas.</p>
             </div>
-            <div class="form-group">
-                <label for="meals">Quantas vezes se alimenta por dia:</label>
-                <input type="number" id="meals" name="meals" required>
+            <div class="feature">
+                <h3>Benefícios da Alimentação</h3>
+                <p>Descubra como a alimentação pode melhorar sua saúde.</p>
             </div>
-            <div class="form-group">
-                <label for="restricao">Possui alguma restrição alimentar? Se sim qual?</label>
-               <select name="restricao" id="restricao">
-                <option value="1">Alergia ao glúten</option>
-                <option value="2">Intolerância à lactose</option>
-                <option value="3">Vegetarianismo/Veganismo</option>
-                <option value="4">Diabetes</option>
-               </select>
-            </div>
-            <div class="form-group">
-                <div class="button-group">
-                    <button type="button" onclick="location.href='cardapios.html'">Enviar</button>
-                    <button type="reset">Limpar</button>
-                </div>
-            </div>
-        </form>
+        </section>
     </main>
+    <footer>
+        <p>&copy; 2024 Vida Saudável. Todos os direitos reservados.</p>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 </html>
