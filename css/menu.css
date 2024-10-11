@@ -2,7 +2,8 @@
 header {
     background-color: #3b773b; 
     color: white;
-    padding: 10px 20px;
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
@@ -14,8 +15,10 @@ header {
 /* Estilo do logotipo */
 .logo a {
     color: white;
-    font-size: 1.5em;
+    font-size: 1.8em;
     text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 /* Menu toggle (para mobile) */
@@ -26,31 +29,79 @@ header {
 
 .menu-toggle .bar {
     display: block;
-    width: 25px;
+    width: 30px;
     height: 3px;
     margin: 5px auto;
     background-color: white;
+    transition: 0.3s ease;
 }
 
 /* Links de navegação */
 .nav-links {
     list-style: none;
     display: flex;
+    justify-content: space-around;
 }
 
 .nav-links li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    padding: 5px 10px;
-    transition: background-color 0.3s ease;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
 }
 
 .nav-links a:hover {
     background-color: #2a5d2a;
-    border-radius: 5px;
+    transform: translateY(-2px);
+}
+
+/* Estilo Responsivo */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #3b773b;
+        padding: 20px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .nav-links a {
+        padding: 15px;
+        font-size: 1.2em;
+    }
+
+    /* Animação do menu toggle */
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
 }

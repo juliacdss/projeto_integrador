@@ -1,133 +1,72 @@
-/* Reset básico para garantir consistência */
-* {
+/* Estilo Geral da Página */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4; /* Fundo suave */
+    background-color: #f0f0f0;
     color: #333;
 }
 
-/* Estilo do cabeçalho */
 header {
-    background-image: url('caminho/para/sua/imagem.jpg'); /* Substitua pelo caminho da sua imagem */
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 20px 0; /* Espaço para o menu */
+    background-color: #A8D5BA;
+    color: #333;
+    padding: 20px 0;
     text-align: center;
-    position: relative;
-}
-
-.header-title {
-    margin-top: 20px; /* Espaço entre o menu e o título */
 }
 
 .header-title h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin: 0;
+    font-size: 36px;
 }
 
 .header-title p {
-    font-size: 1.2em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    margin-top: 10px;
+    color: #555;
 }
 
-/* Estilo da navegação */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    position: relative;
-    z-index: 1; /* Para garantir que o menu fique acima da imagem de fundo */
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin: 0 15px;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: #d0e8d0; /* Cor clara para hover */
-}
-
-/* Estilo do container principal */
 .container {
+    width: 90%;
     max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 15px;
+    margin: 40px auto;
 }
 
-/* Estilo das características */
 .features {
     display: flex;
     justify-content: space-around;
-    padding: 40px 0;
-    background-color: white; /* Fundo branco */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
 }
 
 .feature {
-    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
     width: 30%;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 .feature h3 {
+    color: #333;
+    font-size: 24px;
     margin-bottom: 10px;
-    color: #3b773b; /* Verde escuro */
 }
 
 .feature p {
-    font-size: 1em;
+    font-size: 16px;
+    color: #666;
 }
 
-/* Estilo do rodapé */
 footer {
+    background-color: #A8D5BA;
+    color: #333;
     text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
+    padding: 20px 0;
+    margin-top: 40px;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .features {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .feature {
-        width: 80%;
-        margin-bottom: 20px;
-    }
+footer p {
+    margin: 0;
+    font-size: 14px;
 }
