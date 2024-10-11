@@ -51,10 +51,9 @@ header {
 
 .nav-links a:hover {
     background-color: #2a5d2a;
-    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+    transform: scale(1.05);
 }
 
-/* Estilos de Títulos */
 h1 {
     text-align: center;
     margin: 5vw 0;
@@ -80,7 +79,6 @@ p.inicio {
     margin: 5vw 0 5vw 0;
 }
 
-/* Estilos de Parágrafos */
 .main p.inicio {
     text-align: center;
     font-size: 4vw;
@@ -88,7 +86,6 @@ p.inicio {
     color: #208120;
 }
 
-/* Estilos de Listas */
 ul {
     padding: 0;
 }
@@ -106,18 +103,17 @@ li p {
     font-size: 1vw;
 }
 
-/* Estilos das Dicas */
 .dicas {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px; 
-    flex-wrap: wrap; /* Permite que os itens quebrem em telas menores */
+    flex-wrap: wrap; 
     margin: 5vw 5vw 5vw 5vw;
 }
 
 .item {
-    width: calc(48% - 10px); /* Largura responsiva */
-    margin-bottom: 20px; /* Espaçamento entre itens */
+    width: calc(48% - 10px); 
+    margin-bottom: 20px;
     background: rgba(255, 255, 255, 0.8);
     border-radius: 8px;
     padding: 15px;
@@ -126,24 +122,24 @@ li p {
 }
 
 .item:hover {
-    transform: translateY(-3px); /* Levanta o item ao passar o mouse */
+    transform: translateY(-3px); 
 }
 
-/* Estilo do Rodapé */
+
 footer {
     text-align: center;
     margin: 20px 0;
     font-weight: bold;
 }
 
-/* Estilos Gerais */
+
 main {
     margin: 20px 5%;
 }
 
 @media (max-width: 768px) {
     .nav-links {
-        flex-direction: column; /* Empilha links em telas menores */
+        flex-direction: column; 
         align-items: center;
     }
 
@@ -152,11 +148,11 @@ main {
     }
 
     .dicas {
-        flex-direction: column; /* Empilha dicas em telas menores */
+        flex-direction: column; 
         align-items: center;
     }
 
     .item {
-        width: 90%; /* Largura maior para dispositivos móveis */
+        width: 90%; 
     }
 }
