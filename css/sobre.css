@@ -141,5 +141,15 @@ p {
 .equipe img.clicked {
     transform: translateY(-10px); /* Levanta a imagem quando clicada */
 }
+footer {
+    background-color: #A8D5BA;
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
 
-
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
