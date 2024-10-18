@@ -156,6 +156,9 @@ footer p {
 }
 .sobre{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -7vw;
 }
 .sobre h1{
     text-align: center;
