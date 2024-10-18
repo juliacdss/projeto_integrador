@@ -154,3 +154,15 @@ footer p {
     margin: 0;
     font-size: 14px;
 }
+.sobre{
+    display: flex;
+}
+.sobre h1{
+    text-align: center;
+}
+.sobre div{
+align-items: center;
+}
+.sobre div.um{
+
+}
