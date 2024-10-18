@@ -24,7 +24,6 @@ html {
 body {
    font-family: "Raleway", sans-serif;
    font-optical-sizing: auto;
-   font-weight:normal;
    font-style: normal;
    font-variation-settings: "wdth"100;
 }
@@ -44,12 +43,12 @@ ganhar peso
 =================*/
 
 h1 {
-
+   text-align: center;
    margin: 2vw 0 0 1vw;
 }
 
 main p {
-
+   text-align: center;
    margin: 0 0 0 1vw;
 }
 
