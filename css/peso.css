@@ -2,7 +2,6 @@
     css reset
 =================*/
 
-
 * {
    padding: 0;
    margin: 0;
@@ -10,7 +9,6 @@
    list-style: none;
    border: 0;
 }
-
 
 /*===============
 formatação geral
@@ -29,8 +27,6 @@ body {
    font-weight:normal;
    font-style: normal;
    font-variation-settings: "wdth"100;
-   margin: 0;
-   padding: 20px;
 }
 
 a {
@@ -47,6 +43,15 @@ a:hover {
 ganhar peso 
 =================*/
 
+h1 {
+
+   margin: 2vw 0 0 1vw;
+}
+
+main p {
+
+   margin: 0 0 0 1vw;
+}
 
 .gallery {
    display: flex;
