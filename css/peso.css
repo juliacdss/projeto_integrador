@@ -16,7 +16,6 @@ formatação geral
 
 html {
    font-size: calc(5px + 1vw);
-   font-family: "Fredoka", sans-serif;
    color: #043102;
    background-color: #bef0b7;
 }
@@ -40,49 +39,7 @@ a:hover {
    text-decoration: underline;
 }
 
-/*===============
-formatacao do topo
-=================*/
 
-header {
-   padding: 0 20px;
-   text-align: center;
-   margin-bottom: 20px;
-}
-
-.menu {
-   background-color: green;
-   color: white;
-   padding: 10px 0;
-}
-
-.menu nav ul {
-   list-style: none;
-   padding: 0;
-   margin: 0;
-   display: flex;
-   justify-content: center;
-
-}
-
-.menu nav ul li {
-   margin: 0 15px;
-}
-
-.menu nav ul li a {
-   color: rgb(255, 255, 255);
-   text-decoration: none;
-   font-weight: 600;
-}
-
-.menu nav ul li a:hover {
-   text-decoration: underline;
-}
-
-header h1 {
-   margin: 20px 0;
-   font-size: 1.5em;
-}
 
 /*===============
 ganhar peso 
