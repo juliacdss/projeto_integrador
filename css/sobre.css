@@ -27,14 +27,15 @@ h1 {
 }
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family:  "Raleway", sans-serif;
 }
 
 .navbar {
+    font-family:  "Raleway", sans-serif;;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #4CAF50;
+    background-color: #3b773b;
     padding: 10px 20px;
     position: relative;
 }

@@ -20,7 +20,7 @@ header {
     margin: 40px auto;
 }
 
-features {
+.features {
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-between; 
