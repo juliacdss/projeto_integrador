@@ -2,6 +2,7 @@
     css reset
 =================*/
 
+
 * {
    padding: 0;
    margin: 0;
@@ -10,9 +11,11 @@
    border: 0;
 }
 
+
 /*===============
 formatação geral
 =================*/
+
 
 html {
    font-size: calc(5px + 1vw);
@@ -38,7 +41,6 @@ a {
 a:hover {
    text-decoration: underline;
 }
-
 
 
 /*===============
@@ -112,8 +114,6 @@ h2 {
    font-size: 20px;
    color: #333;
 
-
-
 }
 
 section.gallery {
@@ -140,6 +140,7 @@ th {
 }
 
 /*perder peso*/
+
 .wrap{
    display: flex;
    justify-content: space-evenly;
