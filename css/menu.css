@@ -1,18 +1,20 @@
-/* Estilo do cabeçalho */
 header {
-    background-color: #3b773b; 
+    background-color: #3b773b;
     color: white;
     padding: 15px 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
 }
 
-/* Estilo do logotipo */
 .logo a {
     color: white;
     font-size: 1.8em;
@@ -21,7 +23,6 @@ header {
     letter-spacing: 2px;
 }
 
-/* Menu toggle (para mobile) */
 .menu-toggle {
     display: none;
     cursor: pointer;
@@ -36,15 +37,13 @@ header {
     transition: 0.3s ease;
 }
 
-/* Links de navegação */
 .nav-links {
     list-style: none;
     display: flex;
-    justify-content: space-around;
-}
-
-.nav-links li {
-    margin: 0 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
 }
 
 .nav-links a {
@@ -57,11 +56,12 @@ header {
 }
 
 .nav-links a:hover {
+    color: white;
+    text-decoration: none;
     background-color: #2a5d2a;
     transform: translateY(-2px);
 }
 
-/* Estilo Responsivo */
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
@@ -92,7 +92,6 @@ header {
         font-size: 1.2em;
     }
 
-    /* Animação do menu toggle */
     .menu-toggle.active .bar:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
     }

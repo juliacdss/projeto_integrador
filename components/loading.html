@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Página de Carregamento</title>
+    <style>
+     
+
+    </style>
+</head>
+<body>
+    <div id="loading" class="loading">
+        <div class="spinner"></div>
+        <p>Carregando...</p>
+    </div>
+
+    <div id="content" style="display: none;">
+        <h1>Bem-vindo à página!</h1>
+        <p>Este é o conteúdo da sua página.</p>
+        <a href="outra-pagina.html">Ir para outra página</a>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const loading = document.getElementById('loading');
+    const content = document.getElementById('content');
+
+    setTimeout(() => {
+        loading.style.display = 'none';
+        content.style.display = 'block';
+    }, 2000); 
+});
+
+    </script>
+</body>
+</html>

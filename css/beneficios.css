@@ -56,12 +56,11 @@ table {
 /* Estilos gerais do corpo */
 
 html{
-    background-color: #bef0b7;
+    /* background-color: #bef0b7; */
 }
 
 body {
     font-family: "Raleway", sans-serif;
-    background-color: #bef0b7; /* Cor de fundo clara */
     color: #333; /* Cor do texto */
     line-height: 1.6;
 }
@@ -75,7 +74,7 @@ body {
 /* Estilos da seção principal */
 section {
     border-radius: 8px;
-    background: #bef0b7;  
+    /* background: #bef0b7;   */
 }
 
 

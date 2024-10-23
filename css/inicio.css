@@ -8,10 +8,10 @@ body {
 }
 
 header {
-    background-color: #A8D5BA;
-    color: #333;
     padding: 20px 0;
     text-align: center;
+    position: sticky; top: 0;
+    z-index: 1000;
 }
 
 .container {
@@ -21,19 +21,19 @@ header {
 }
 
 .features {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-between; 
-    width: 100%; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 20px; 
+    width: 100%;
 }
 
 .feature {
-    margin: 10px; 
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    flex-grow: 1; 
+    padding: 20px;
 }
+
 .feature h3 {
     color: #333;
     font-size: 24px;
@@ -64,10 +64,10 @@ header {
     transition: background-color 0.3s ease;
   
 }
-.vida{
-    justify-content: space-between;
+.vida {
     display: flex;
-    
+    justify-content: space-between;
+    align-items: center;
 }
 .strawberries{
   position: absolute;
@@ -96,4 +96,60 @@ footer p {
 }
 .wrap{
     display: flex;
+}
+
+.image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+}
+.link{
+    text-decoration: none;
+}
+
+.carousel-caption {
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+    color: white;
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.carousel-caption.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.carousel-caption h5 {
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+}
+
+.carousel-caption p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .carousel-caption h5 {
+        font-size: 1.5em;
+    }
+
+    .carousel-caption p {
+        font-size: 1em;
+    }
 }
