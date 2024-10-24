@@ -91,10 +91,6 @@ header {
     padding: 0 10px 0 10px;
 }
 
-.nav-links li:hover .submenu {
-}
-
-
 .submenu button {
     background-color: #4CAF50; /* Verde */
     color: white; /* Cor do texto do botão */
