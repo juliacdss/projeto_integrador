@@ -130,7 +130,8 @@ th {
 
 .wrap{
    display: flex;
-   justify-content: space-evenly;
+   justify-content: space-around;
+   gap: 5em;
 }
 
 .titles{
@@ -142,6 +143,10 @@ th {
    display: flex;
    justify-content: space-evenly;
 }
+img.dish-sopa {
+   width: 120%;
+}
+
 footer {
    background-color: #A8D5BA;
    color: #333;
@@ -153,4 +158,8 @@ footer {
 footer p {
    margin: 0;
    font-size: 14px;
+}
+
+.img-frango{
+   width: 100%;
 }
