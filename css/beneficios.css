@@ -55,9 +55,6 @@ table {
 
 /* Estilos gerais do corpo */
 
-html{
-    /* background-color: #bef0b7; */
-}
 
 body {
     font-family: "Raleway", sans-serif;
@@ -84,15 +81,15 @@ section {
     text-align: center;
 }
 
-.banner img {
-    width: 100%; /* Faz com que a imagem ocupe toda a largura do banner */
-    height: auto; /* Mantém a proporção da imagem */
-}
+
 
 .banner h1 {
     color: #19490a;
     font-family: "Raleway", sans-serif;
     font-size: 4.5rem;
+}
+.banner p{
+    font-size: x-large;
 }
 
 /* Estilos dos parágrafos */
@@ -168,4 +165,11 @@ footer {
 footer p {
     margin: 0;
     font-size: 14px;
+}
+img{
+    width: 5vw;
+  
+}
+strong{
+    font-size: larger;
 }
