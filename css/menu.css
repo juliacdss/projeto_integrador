@@ -1,9 +1,17 @@
+body {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
 header {
-    font-family:  "Raleway", sans-serif;
-    background-color: #3b773b;
-    color: white;
-    padding: 15px 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: "Raleway", sans-serif;
+    background-color: #3b773b; /* Cor do cabeçalho */
+    color: white; /* Cor do texto do cabeçalho */
+    padding: 15px 20px; /* Espaçamento interno do cabeçalho */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra do cabeçalho */
 }
 
 .navbar {
@@ -17,91 +25,92 @@ header {
 }
 
 .logo a {
-    color: white;
-    font-size: 1.8em;
-    text-decoration: none;
-    font-weight: bold;
-    letter-spacing: 2px;
+    color: white; /* Cor do logo */
+    font-size: 1.8em; /* Tamanho da fonte do logo */
+    text-decoration: none; /* Remove o sublinhado do logo */
+    font-weight: bold; /* Peso da fonte do logo */
+    letter-spacing: 2px; /* Espaçamento entre letras do logo */
 }
 
 .menu-toggle {
-    display: none;
-    cursor: pointer;
+    display: none; /* Esconde o botão do menu em telas grandes */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
 }
 
 .menu-toggle .bar {
-    display: block;
-    width: 30px;
-    height: 3px;
-    margin: 5px auto;
-    background-color: white;
-    transition: 0.3s ease;
+    display: block; /* Exibe as barras do menu */
+    width: 30px; /* Largura das barras */
+    height: 3px; /* Altura das barras */
+    margin: 5px auto; /* Margem entre as barras */
+    background-color: white; /* Cor das barras */
+    transition: 0.3s ease; /* Transição suave ao alterar o estilo */
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin: 0;
+    list-style: none; /* Remove marcadores da lista */
+    display: flex; /* Exibe links em linha */
+    justify-content: center; /* Centraliza os links */
+    align-items: center; /* Alinha os links verticalmente */
+    gap: 20px; /* Espaçamento entre os links */
+    margin: 0; /* Remove margem padrão */
 }
 
 .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 15px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    border-radius: 5px;
+    color: white; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold; /* Peso da fonte dos links */
+    padding: 10px 20px; /* Espaçamento interno dos links */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+    border-radius: 5px; /* Arredondamento dos cantos dos links */
+    white-space: nowrap; /* Não quebra a linha */
 }
 
 .nav-links a:hover {
-    color: white;
-    text-decoration: none;
-    background-color: #2a5d2a;
-    transform: translateY(-2px);
+    color: white; /* Cor do texto ao passar o mouse */
+    text-decoration: none; /* Remove o sublinhado ao passar o mouse */
+    background-color: #2a5d2a; /* Cor de fundo ao passar o mouse */
+    transform: translateY(-2px); /* Leve elevação ao passar o mouse */
 }
 
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        background-color: #3b773b;
-        padding: 20px 0;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .nav-links.show {
-        display: flex;
-    }
-
-    .nav-links li {
-        margin: 15px 0;
-    }
-
-    .nav-links a {
-        padding: 15px;
-        font-size: 1.2em;
-    }
-
-    .menu-toggle.active .bar:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-    }
-
-    .menu-toggle.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .menu-toggle.active .bar:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -5px);
-    }
+.submenu {
+    display: none; /* Esconde o submenu por padrão */
+    position: absolute; /* Permite posicionar o submenu */
+    left: 0; /*Alinha à esquerda do item pai*/
+    top: 100%; /* Posiciona abaixo do item pai */
+    background-color: #A8D5BA; /* Cor de fundo do submenu */
+    border-radius: 5px; /* Arredonda os cantos do submenu */
+    padding: 10px 0; /* Espaçamento interno do submenu */
+    z-index: 1000; /* Garante que o submenu fique acima de outros elementos */
+    list-style: none;
 }
+
+.nav-links li {
+    position: relative; /* Permite que o submenu seja posicionado em relação ao item pai */
+    width: 100%;
+    margin-top: 10px;
+    padding: 0 10px 0 10px;
+}
+
+.nav-links li:hover .submenu {
+}
+
+
+.submenu button {
+    background-color: #4CAF50; /* Verde */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove borda do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    font-size: 1em; /* Tamanho da fonte do botão */
+    border-radius: 5px; /* Arredondamento dos cantos do botão */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    width: 100%; /* Faz com que os botões ocupem toda a largura do submenu */
+}
+
+.submenu button:hover {
+    background-color: #45a049;
+}
+
+.link-car{
+    cursor: pointer;
+}
+

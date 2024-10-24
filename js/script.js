@@ -14,7 +14,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const submenuLinks = document.querySelectorAll('.link-car');
+
+    submenuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            const submenu = this.nextElementSibling; 
+            const isVisible = submenu.style.display === 'block';
+
+            document.querySelectorAll('.submenu').forEach(s => {
+                s.style.display = 'none';
+            });
+
+            submenu.style.display = isVisible ? 'none' : 'block';
+        });
+    });
+});
 
 
-// Loading 
+
 

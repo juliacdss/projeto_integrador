@@ -12,10 +12,12 @@ h1 {
     font-size: 2.5vw;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
-
+.titles{
+    margin-top: 1em;
+}
 .titles h2 {
     text-align: center;
-    margin: -2vw 0 0 0;
+    margin: 1vw 0 0 0;
     font-size: xx-large;
 }
 

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/sobre.css">
     <link rel="stylesheet" href="css/menu.css"> 
     <link rel="stylesheet" href="css/loading.css">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
     <div id="loading" class="loading">
@@ -21,7 +21,7 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="#">NutriDelight</a>
+                <a>NutriDelight</a>
             </div>
             <div class="menu-toggle" id="menu-toggle">
                 <span class="bar"></span>
@@ -30,10 +30,17 @@
             </div>
             <ul class="nav-links" id="nav-links">
                 <li><a href="paginainicial.html">Início</a></li>
-                <li><a href="cardapios.html">Cardápios</a></li>
                 <li><a href="beneficios.html">Benefícios</a></li>
                 <li><a href="dicas.html">Dicas</a></li>
                 <li><a href="sobre.html">Sobre Nós</a></li>
+                <li>
+                    <a class="link-car">Cardápios</a>
+                    <ul class="submenu">
+                        <li><button type="button" onclick="location.href='ganharpeso.html'">Ganhar Peso</button></li>
+                        <li><button type="button" onclick="location.href='perderpeso.html'">Perder Peso</button></li>
+                        <li><button type="button" onclick="location.href='restricoes.html'">Restrições Alimentares</button></li>
+                    </ul>
+                </li>                
             </ul>
         </nav>
     </header>
@@ -46,21 +53,13 @@
             </div>
             <div class="um">
                 <p>
-                    Nós somos quatro garotas do Ensino Técnico Integrado em Informática do Instituto Federal.Juntas,criamos um site que não apenas informa, mas também inspira nossos colegas e a comunidade a adotarem hábitos alimentares mais nutritivos e equilibrados.
-                    Estamos determinadas a compartilhar dicas práticas, saudáveis sobre nutrição. Nosso objetivo é demonstrar que é possível fazer escolhas saudáveis de maneira acessível e prazerosa.
-                    Além de adquirir conhecimento em tecnologia, estamos aprofundando nosso entendimento sobre o impacto da alimentação em nossa saúde e bem-estar. Acreditamos firmemente que pequenas mudanças podem resultar em grandes transformações e desejamos que todos se sintam motivados a cuidar de si mesmos.
-                    
-                    Convidamos você a se juntar a nós nesta jornada! Juntas, vamos explorar o universo da alimentação saudável e fazer da saúde uma prioridade em nossas vidas.
+                    Somos quatro estudantes de Informática no Instituto Federal e criamos um site para inspirar nossos colegas e a comunidade a adotar hábitos alimentares mais saudáveis.<br>Queremos compartilhar dicas acessíveis que mostrem como é possível fazer escolhas nutritivas de forma simples e prazerosa. Além de desenvolvermos nossas habilidades em tecnologia, estamos aprendendo sobre o impacto da alimentação na saúde.<br>Acreditamos que pequenas mudanças trazem grandes resultados e convidamos você a se juntar a nós nessa jornada pela saúde e bem-estar!
                 </p>
             </div>
         </section>
-        <section>
+        <section class="sobre2">
                    <h1>Nossa Missão</h1>
-                    <p>Nossa missão é inspirar e capacitar pessoas a adotarem um estilo de vida saudável por meio da alimentação consciente. Acreditamos que a comida é uma fonte de saúde e bem-estar, e estamos aqui para ajudar você a fazer escolhas que nutram seu corpo e sua mente.
-
-                    Nosso compromisso é com a qualidade e a simplicidade. Acreditamos que uma alimentação saudável não precisa ser complicada ou sem sabor. Por isso, buscamos apresentar opções práticas, saborosas e acessíveis, que se encaixem na rotina de todos.
-                            
-                    Junte-se a nós na busca por uma vida mais saudável, onde cada refeição é uma oportunidade de cuidar de si mesmo e do planeta. Vamos juntos transformar a alimentação em um ato de amor!
+                    <p>Nossa missão é inspirar pessoas a adotarem um estilo de vida saudável por meio da alimentação consciente.<br> Acreditamos que a comida é fonte de saúde e bem-estar, e queremos ajudar você a fazer escolhas que nutram o corpo e a mente.<br> Valorizamos a qualidade e simplicidade, mostrando que comer bem pode ser prático, saboroso e acessível. <br>Junte-se a nós nessa jornada por uma vida mais saudável, onde cada refeição é uma oportunidade de cuidar de si e do planeta!
                     </p>
         </section>
             <section>
@@ -85,5 +84,6 @@
     </footer>
     <script src="js/sobre.js"></script> <!-- Referência ao arquivo JavaScript -->
     <script src="js/loading.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
