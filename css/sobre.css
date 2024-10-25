@@ -93,6 +93,7 @@ p {
 }
 
 .footer {
+    margin: 2vw 0 0 0;
     padding: 40px 0;
     background-color: #3b773b;
     color: white;
