@@ -43,15 +43,24 @@ body {
 .sobre h1{
     text-align: center;
 }
-
+h1.h1 {
+    margin: 2vw 0 0 0;
+}
+.limao img {
+    
+}
 .sobre div{
 align-items: center;
 }
 
 .sobre2 {
     align-items: center;
+    display: flex;
+    justify-content: right;
 }
-
+.nossa {
+    margin: 0 8vw 0 0;
+}
 .missao, .historia {
     margin: 20px 0;
 }
