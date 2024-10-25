@@ -33,7 +33,6 @@ body {
 /* Estilos para a seção "Sobre Nós" */
 .sobre {
     padding: 20px;
-    background-color: #f9f9f9;
     text-align: center;
     display: flex;
     align-items: center;
@@ -43,11 +42,15 @@ body {
 .sobre h1{
     text-align: center;
 }
+.sobre img{
+    margin: 0 2vw 0 0;
+}
 h1.h1 {
     margin: 2vw 0 0 0;
 }
 .limao img {
-    
+        float: right; 
+        margin-right: -5vw;
 }
 .sobre div{
 align-items: center;
@@ -58,8 +61,16 @@ align-items: center;
     display: flex;
     justify-content: right;
 }
+
 .nossa {
-    margin: 0 8vw 0 0;
+    margin: 0 12vw 0 0;
+}
+.nossa h1 {
+    margin: 0 2vw 2vw 0;
+}
+
+section.sobre2 div.nossa p {
+    text-align: justify;
 }
 .missao, .historia {
     margin: 20px 0;
@@ -76,6 +87,7 @@ p {
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.6;
+    text-align: justify;
 }
 
 .equipe {
