@@ -101,3 +101,84 @@ footer p {
     margin: 0;
     font-size: 14px;
 }
+:root {
+    --gap-width: 30px; /* Espaçamento entre os slides */
+    --slide-width: 300px; /* Largura do slide */
+    --slide-height: 150px; /* Altura do slide */
+    --slide-bg-color: rgba(18, 92, 251, 0.52);
+    --overlay-bg-color: rgba(0, 0, 0, 0.5);
+    --overlay-text-color: #fff;
+    --overlay-transition: opacity 0.3s ease;
+    --border-radius: 20px;
+  }
+  
+  .carousel {
+    overflow: hidden;
+    width: 80%; /* Ajuste o tamanho do carrossel */
+    margin: 0 auto; /* Centraliza o carrossel */
+  }
+  
+  .carousel-track {
+    display: flex;
+    gap: var(--gap-width); /* Usa a variável para espaçamento */
+    animation: scroll var(--scroll-duration) linear infinite;
+  }
+  
+  .slide {
+    background: var(--slide-bg-color);
+    flex: 0 0 var(--slide-width); /* Define a largura dos slides */
+    height: var(--slide-height); /* Define a altura dos slides */
+    border-radius: var(--border-radius);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    background: var(--overlay-bg-color);
+    color: var(--overlay-text-color);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: var(--overlay-transition);
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slide:hover .overlay {
+    opacity: 1;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-1 * var(--total-width)));
+    }
+  }
+  
+  .carousel:hover .carousel-track {
+    animation-play-state: paused;
+  }
+  .carousel-title {
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 20px; /* Adiciona espaçamento abaixo do título */
+    color: #fff; /* Cor do texto (ajuste conforme necessário) */
+  }
+  
+  .carousel {
+    overflow: hidden;
+    width: 80%; /* Ajuste conforme necessário */
+    margin: 20px auto 0; /* Adiciona margem superior para espaçamento */
+  }
+    
