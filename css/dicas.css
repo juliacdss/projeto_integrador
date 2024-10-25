@@ -7,10 +7,11 @@ body {
 }
 
 
-h1 {
+.titles h1 {
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 4vw;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    color: #2a5d2a;
 }
 .titles{
     margin-top: 1em;
@@ -18,7 +19,8 @@ h1 {
 .titles h2 {
     text-align: center;
     margin: 1vw 0 0 0;
-    font-size: xx-large;
+    font-size: 3vw;
+    color: #2a5d2a;
 }
 
 div.logo a {
