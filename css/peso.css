@@ -30,6 +30,10 @@ main p {
    margin: 1vw 0 2vw 0;
 }
 
+main p.nutricionista {
+   font-size: large;
+}
+
 .gallery {
    display: flex;
    justify-content: space-around;
