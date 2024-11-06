@@ -245,7 +245,10 @@ section strong {
     text-align: center;
     padding: 0 40vw 0 40vw;
 }
-
+.banner a {
+text-decoration: none;
+color: #3b773b;
+}
 .footer {
     margin: 2vw 0 0 0;
     padding: 40px 0;
