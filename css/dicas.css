@@ -172,6 +172,19 @@ li.corrida img {
     width: 80%; /* Ajuste conforme necessário */
     margin: 20px auto 0; /* Adiciona margem superior para espaçamento */
   }
+
+.saibamais {
+  text-align: center;
+  padding: o 40vw 0 40vw;
+}  
+.saibamais p.saiba {
+  font-size: x-large;
+}
+.saibamais p a {
+  text-decoration: none;
+  color: #208120;
+  font-weight: bold;
+}
   .footer {
     margin: 2vw 0 0 0;
     padding: 40px 0;
