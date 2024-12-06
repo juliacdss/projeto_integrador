@@ -55,7 +55,6 @@ table {
 
 /* Estilos gerais do corpo */
 
-
 body {
     font-family: 'Raleway', sans-serif;
     color: #333; /* Cor do texto */
@@ -75,15 +74,13 @@ section {
     /* background: #bef0b7;   */
 }
 
+/*FORMATAÇÃO SECTION BANNER*/
 
 .banner {
     width: 100%;
     height: auto; /* Ajusta a altura automaticamente de acordo com a imagem */
     text-align: center;
 }
-
-
-
 .banner h1 {
     color: #19490a;
     font-family: 'Raleway', sans-serif;
@@ -94,6 +91,10 @@ section {
 .banner p{
     font-size: x-large;
 }
+.banner a {
+    text-decoration: none;
+    color: #3b773b;
+    }
 
 /* Estilos dos parágrafos */
 section p {
@@ -119,6 +120,8 @@ section strong {
     font-family: "Raleway", sans-serif;
     font-weight: bolder;
 }
+
+/*FORMATAÇÃO SECTION BENEFÍCIOS*/
 
 .beneficio {
     background-color: white;
@@ -159,7 +162,7 @@ section strong {
     margin: 0 auto; /* Centraliza o container em relação à página */
 }
 
-
+/*FORMATAÇÃO CARROSSEL*/
 
 :root {
     --gap-width: 30px; /* Espaçamento entre os slides */
@@ -247,10 +250,9 @@ section strong {
     text-align: center;
     padding: 0 40vw 0 40vw;
 }
-.banner a {
-text-decoration: none;
-color: #3b773b;
-}
+
+/*FORMATAÇÃO FOOTER*/
+
 .footer {
     margin: 2vw 0 0 0;
     padding: 40px 0;
