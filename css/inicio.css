@@ -130,6 +130,13 @@ header {
     line-height: 1.6;
     margin-bottom: 0;
 }
+.carousel img {
+    width: 100%;
+    height: auto;
+    max-height:700px; /* Ajuste a altura máxima conforme necessário */
+    object-fit: cover; /* Garante que a imagem se ajuste sem distorção */
+  }
+  
 
 
 .footer {
