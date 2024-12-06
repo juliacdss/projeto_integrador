@@ -9,9 +9,11 @@ body {
 
 .titles h1 {
     text-align: center;
-    font-size: 4vw;
+    font-size: 3vw;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
     color: #2a5d2a;
+    font-weight: bold;
+    margin: 4vw 0 -1vw 0 ;
 }
 .titles{
     margin-top: 1em;
@@ -21,6 +23,7 @@ body {
     margin: 1vw 0 0 0;
     font-size: 3vw;
     color: #2a5d2a;
+    font-weight: bold;
 }
 
 div.logo a {
