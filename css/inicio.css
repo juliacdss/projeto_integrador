@@ -207,3 +207,101 @@ header {
   background-color:white
     }
 
+    @media (max-width: 576px) {
+        /* Ajuste no Header */
+        header {
+            padding: 10px 0;
+        }
+    
+        .navbar .nav-links {
+            display: none;
+            flex-direction: column;
+            background-color: #3b773b;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+    
+        .navbar .menu-toggle {
+            display: flex;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 5px;
+        }
+    
+        .navbar .menu-toggle .bar {
+            height: 3px;
+            width: 25px;
+            background-color: white;
+        }
+    
+        .navbar .nav-links.active {
+            display: flex;
+        }
+    
+        /* Ajuste no Carousel */
+        .carousel-caption {
+            max-width: 90%;
+            font-size: 0.9em;
+        }
+    
+        .carousel-caption h5 {
+            font-size: 1.5em;
+        }
+    
+        .carousel-caption p {
+            font-size: 1em;
+        }
+    
+        /* Ajustes Gerais */
+        .container {
+            width: 100%;
+            padding: 10px;
+        }
+    
+        .features {
+            grid-template-columns: 1fr; /* Ajusta para uma coluna */
+        }
+    
+        .feature img {
+            width: 60%; /* Reduz a largura das imagens */
+        }
+    
+        .vida {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        .vida h1 {
+            font-size: 1.2em;
+        }
+    
+        .vida button {
+            margin-top: 10px;
+            width: 100%;
+            font-size: 0.9em;
+        }
+    
+        .strawberries {
+            display: none; /* Oculta a imagem lateral */
+        }
+    
+        .footer {
+            padding: 20px 0;
+            font-size: 14px;
+        }
+    
+        .footer ul {
+            font-size: 16px;
+        }
+    
+        .footer .social > a {
+            font-size: 20px;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+        }
+    }
+    
