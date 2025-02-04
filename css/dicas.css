@@ -318,5 +318,15 @@ li.corrida img {
     width: 90%;
   }
 
-  
+  .saibamais p {
+
+    font-size: small;
+  }
+
+  .saibamais .saiba {
+
+    font-size: small;
+  }
+
+
 }
