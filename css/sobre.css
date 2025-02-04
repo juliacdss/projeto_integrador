@@ -196,9 +196,12 @@ p {
             height: auto;
             margin: 0 auto 20px;
         }
-    
+     
         .sobre div.um p {
             text-align: justify;
+            font-size:small;
+            justify-content: center;
+           
         }
     
         .sobre2 {
@@ -211,17 +214,22 @@ p {
         .nossa {
             margin: 0;
             text-align: center;
+            
         }
     
-        .nossa h1 {
+        .sobre2 div.nossa h1 {
             margin-bottom: 20px;
+            font-size: large;
+            
         }
-    
+        .sobre2 div.nossa p{
+            text-align: justify;
+            font-size:small;
+            justify-content: center;
+        }
+      
         .limao img {
-            max-width: 100%;
-            height: auto;
-            margin: 20px auto;
-            float: none;
+            display: none; /* Oculta a imagem lateral */
         }
     
         .equipe {
@@ -231,8 +239,7 @@ p {
         }
     
         .equipe img {
-            width: 100px;
-            height: 100px;
+          display: none;
         }
     
         .nomes {
@@ -246,6 +253,7 @@ p {
             width: 100%;
             margin: 10px 0;
             text-align: center;
+            font-size: medium;
         }
     
         .footer {
@@ -266,4 +274,5 @@ p {
             margin: 5px;
         }
     }
+    
     

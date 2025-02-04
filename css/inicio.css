@@ -268,7 +268,7 @@ header {
         .feature img {
             width: 60%; /* Reduz a largura das imagens */
         }
-    
+       
         .vida {
             flex-direction: column;
             text-align: center;
