@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li>
+                <h2>
+                    <span>+</span> Sobre Nós
+                </h2>
+                <p>
+                    Somos quatro estudantes do Técnico Integrado em Informática para Internet do Instituto Federal
+                    Catarinense e criamos um site para inspirar nossos colegas e a comunidade a adotar hábitos
+                    alimentares mais saudáveis.<br>Queremos compartilhar dicas acessíveis que mostrem como é possível
+                    fazer escolhas nutritivas de forma simples e prazerosa. Além de desenvolvermos nossas habilidades em
+                    tecnologia, estamos aprendendo sobre o impacto da alimentação na saúde.<br>Acreditamos que pequenas
+                    mudanças trazem grandes resultados e convidamos você a se juntar a nós nessa jornada pela saúde e
+                    bem-estar!
+                </p>
+            </li>
+            <li>
+                <h2>
+                    <span>+</span> Nossa Missão
+                </h2>
+                <p>
+                    Nossa missão é inspirar pessoas a adotarem um estilo de vida saudável por meio da alimentação
+                    consciente.<br> Acreditamos que a comida é fonte de saúde e bem-estar, e queremos ajudar você a
+                    fazer escolhas que nutram o corpo e a mente.<br> Valorizamos a qualidade e simplicidade, mostrando
+                    que comer bem pode ser prático, saboroso e acessível. <br>Junte-se a nós nessa jornada por uma vida
+                    mais saudável, onde cada refeição é uma oportunidade de cuidar de si e do planeta!
+                </p>
+            </li>
+            <li>
+                <h2>
+                    <span>+</span> Nossa Equipe
+                </h2>
+                <p>
+                    Amanda Eduarda Andrade Dos Santos <br> Anna Luiza Carvalho Araujo<br> Julia Costa da Silva<br>
+                    Thayná de Oliveira Becker
+                </p>
+            </li>
+        </ul>
+    </main>
+    <style>
+        html {
+            border-radius: 2vw;
+            text-decoration: none;
+            font-family: "Raleway", sans-serif;
+        }
+
+        html ul li h2 {
+            text-decoration: none;
+            background-color: #3b773b;
+            color: white;
+            padding: 1vw;
+            margin-right: 25vw;
+            border-radius: 2vw;
+            font-weight: bold;
+        }
+
+        html ul li {
+            list-style: none;
+        }
+
+        html ul li h2 p {
+            font-size: larger;
+            text-decoration: none;
+
+        }
+
+        h2:hover {
+            background-color: #294e29;
+        }
+
+        p {
+            background-color: #8ecc8e;
+            border-radius: 2vw;
+            margin-right: 25vw;
+            padding: 1.5vw 1vw 1.5vw 1vw;
+        }
+
+        ul li p {
+            display: none;
+        }
+    </style>
+    <script>
+
+        let tela = window.outerWidth;
+        if (tela <= 576) {
+
+            let elementos = document.querySelectorAll('h2');
+            elementos.forEach((item) => {
+                item.addEventListener('click', function (e) {
+                    console.log("Foi");
+                    let estado = this.parentNode.querySelector('p').style.display;
+                    if (estado == "block") {
+                        this.parentNode.querySelector('p').style.display = "none"
+                        this.querySelector("span").innerText = "+";
+
+                    } else {
+                        this.parentNode.querySelector('p').style.display = "block"
+                        this.querySelector("span").innerText = "-";
+                    }
+
+                })
+            });
+
+        }
+
+        /*
+        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+        // true for mobile device
+        document.write("mobile device");
+        }
+        */
+
+
+    </script>
+</body>
+
+</html>
