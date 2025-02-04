@@ -336,6 +336,7 @@ strong{
     header h1 {
         text-align: center;
         margin: 5vw 0 5vw 0;
+        
     }
     header nav ul {
        flex-wrap: wrap; /*quando não tiver mais espaço, o elemento cairá*/
@@ -345,6 +346,9 @@ strong{
         width: 40%; /*define os tamanhos de tela dos itens*/
         margin: 5vw 2vw 5vw 2vw;
         text-align: center;
+    }
+    main section.banner h1 {
+      font-size: xx-large;
     }
     main section.banner h2 {
         font-size: 2rem;

@@ -121,20 +121,31 @@ th {
 
 /*perder peso*/
 
-.wrap{
+.almoco{
    display: flex;
    justify-content: space-around;
    gap: 5em;
 }
-
+.janta{
+   display: flex;
+   justify-content: space-around;
+   gap: 5em;
+}
 .titles{
    display: flex;
    justify-content: space-around;
 }
 
-.container-cafe-lanche{
+.cafe{
    display: flex;
    justify-content: space-evenly;
+   gap: 5em;
+}
+
+.lanche{
+   display: flex;
+   justify-content: space-evenly;
+   gap: 5em;
 }
 img.dish-sopa {
    width: 120%;
@@ -211,3 +222,26 @@ img.dish-sopa {
  color:white;
  background-color:white
    }
+
+
+
+
+/* RESPONSIVIDADE*/
+
+@media (max-width: 576px) {
+
+   .gallery {
+      display:block;
+      
+   }
+   .dish {
+      margin: 5px;
+   }
+   
+   .dish-img {
+      width: 100px;
+      height: auto;
+      border-radius: 6px;
+   }
+  
+}
