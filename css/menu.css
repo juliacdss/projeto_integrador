@@ -230,7 +230,7 @@ header {
     padding: 20px 0;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 576px) /*dispositivos até 576px - celulares*/ {
     .menu-toggle {
         display: block; /* Exibe o botão do menu em telas pequenas */
     }

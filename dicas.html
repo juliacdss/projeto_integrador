@@ -119,6 +119,75 @@
             <p><a href="https://www.todamateria.com.br/alimentacao-saudavel/">Toda Matéria</a></p>
             <p><a href="https://www.gov.br/saude/pt-br">GOVBR</a></p>
         </div>
+        <form action="#">
+            <fieldset>
+                <legend>Calcule seu IMC (Índice de Massa Corporal)!</legend>
+                <p>
+                    <label for="peso">Peso:</label>
+                    <input type="number" id="peso">
+                </p>
+                <p>
+                    <label for="altura">Altura (em metros):</label>
+                    <input type="number" id="altura">
+                </p>
+                <p id="envio">
+                    <input type="button" value="Calcular" id="btn-enviar">
+                </p>
+                <div id="total">
+          
+                </div>
+            </fieldset>
+        </form>
+    
+    <script>
+        
+        let btn = document.getElementById("btn-enviar");
+
+        btn.addEventListener("click", function (e) {
+          let peso = document.getElementById("peso").value;
+          let altura = document.getElementById("altura").value;
+          console.log(peso, altura);
+          let total = (peso / (altura * altura)).toFixed(2);     
+          console.log(total)  
+          let mensagem = document.getElementById ("total");
+          mensagem.innerText = "  Seu IMC é: " + total ;
+         });
+          
+   
+    </script>
+    <style>
+        html{
+            display: flex;
+            justify-content: center;
+            font-size: larger;
+            font-family: "Raleway", sans-serif;
+            
+        }
+        legend{
+            font-size: xx-large;
+            text-align: center;
+        }
+        fieldset{
+            text-align: center;
+            border-radius: 2vw ;
+            padding: 2vw 2vw 8vw 2vw;
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        }
+        form fieldset p#envio input{
+            background-color: #3b773b;
+            border: none;
+            padding: 15px;
+            border-radius: 1vw;
+            color: white;
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+          
+            
+        }
+        div#total{
+            box-shadow: 2px 2px 2px 1px  rgb(127, 211, 58);
+            font-size: x-large;
+        }
+    </style>
     </main>
     <footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
             
@@ -141,7 +210,4 @@
     <script src="js/dicas.js"></script>
 
 </body>
-
-
-
 </html>

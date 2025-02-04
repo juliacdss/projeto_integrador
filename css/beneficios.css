@@ -270,7 +270,7 @@ section strong {
 }
 
 .footer li {
-    display: inline-block; /* Change to inline-block for horizontal layout */
+    display: inline-block; 
     padding: 0 10px;
 }
 
@@ -328,75 +328,74 @@ strong{
     font-size: larger;
 }
 
-/* ===========================
-   Responsividade para até 576px
-   =========================== */
-   @media (max-width: 576px) {
-    /* Ajuste da fonte e espaçamento geral */
-    body {
-        font-size: 14px;
-        padding: 0 10px;
+/* CSS media query dentro de um stylesheet */
+@media (max-width: 576px) /*dispositivos até 576px - celulares*/ { 
+    header {
+        display: block; /*retira o flex do header*/
     }
-
-    /* Banner */
-    .banner h1 {
-        font-size: 2rem; /* Reduz o tamanho da fonte */
-        margin: 1.5rem 0;
-    }
-    .banner p {
-        font-size: 1rem; /* Reduz a fonte para dispositivos menores */
-    }
-
-    /* Benefício container */
-    .beneficio-container,
-    .fortalecimento {
-        flex-direction: column; /* Empilha os itens em vez de mantê-los lado a lado */
-        gap: 15px;
-    }
-
-    .beneficio {
-        width: 100%; /* Os cartões ocupam toda a largura */
-        margin: 10px 0; /* Ajusta margens verticais */
-    }
-
-    .beneficio img {
-        width: 80px; /* Reduz o tamanho das imagens */
-        margin-bottom: 10px;
-    }
-
-    /* Navbar */
-    .nav-links {
-        display: none; /* Esconde os links por padrão */
-        flex-direction: column; /* Empilha os links */
-        background-color: #3b773b; /* Fundo da navegação */
-        position: absolute;
-        top: 100%; /* Aparece abaixo do cabeçalho */
-        left: 0;
-        width: 100%; /* Ocupa toda a largura */
-        z-index: 10;
-        padding: 10px 0;
-    }
-
-    .nav-links li {
+    header h1 {
         text-align: center;
-        margin: 5px 0;
+        margin: 5vw 0 5vw 0;
     }
-
-    .menu-toggle {
-        display: block; /* Mostra o botão de alternância */
-        cursor: pointer;
+    header nav ul {
+       flex-wrap: wrap; /*quando não tiver mais espaço, o elemento cairá*/
+       justify-content: center;
     }
-
-    .menu-toggle.active + .nav-links {
-        display: flex; /* Mostra os links ao ativar o toggle */
+    header nav ul li {
+        width: 40%; /*define os tamanhos de tela dos itens*/
+        margin: 5vw 2vw 5vw 2vw;
+        text-align: center;
     }
-
-    /* Footer */
-    .footer-links {
-        flex-direction: column; /* Empilha os links */
-        align-items: center;
+    main section.banner h2 {
+        font-size: 2rem;
+        margin: 1vw 4vw 1vw 4vw;
     }
-    .footer-links li {
-        margin: 5px 0;
+    main section.banner p.primeiro {
+        margin: 3.5vw 0 3.5vw 0;
+        font-size: 1rem;
+    }
+    main section.products p.segundo {
+        font-size: 1rem;
+        margin: 0 4vw 0 4vw;
+    }
+    main section.products ul li {
+        width: 90%;
+        margin: 2vw 2vw 2vw 2vw;
+    }
+    main section.build p.terceiro {
+        font-size: 1rem;
+        margin: 1vw 4vw 4vw 4vw;
+        text-align: center;
+    }
+    main section.build div.dividir p.imagem {
+        width: 100%; /*largura da section*/
+        text-align: center;
+        margin: 0 0 0 0;
+    }
+    main section.build div.dividir p.imagem img {
+        width: 80%; /*largura da img*/
+    }
+    main section.build div.dividir {
+        display: block;
+    }
+    main section.build div.dividir div h3{
+        width: 90%;
+        font-size: 1.5rem;
+        margin: 0 auto 0 auto;
+        text-align: center;
+    }
+    main section.build div.dividir div p {
+        font-size: 1rem;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto 0 auto;
+    }
+    footer {
+        padding: 2vw 10vw 2vw 10vw;
+        display:  block;
+        text-align: center;
+    }
+    footer ul {
+        justify-content: center;
     }
 }
