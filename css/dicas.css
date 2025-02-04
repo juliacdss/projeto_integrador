@@ -1,257 +1,322 @@
-
 body {
-    background-color: white;
-    font-family: "Raleway", sans-serif;
-    margin: 0;
-    line-height: 1.6;
+  background-color: white;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  line-height: 1.6;
 }
 
 
 .titles h1 {
-    text-align: center;
-    font-size: 3vw;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-    color: #2a5d2a;
-    font-weight: bold;
-    margin: 4vw 0 -1vw 0 ;
+  text-align: center;
+  font-size: 3vw;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  color: #2a5d2a;
+  font-weight: bold;
+  margin: 4vw 0 -1vw 0;
 }
-.titles{
-    margin-top: 1em;
+
+.titles {
+  margin-top: 1em;
 }
+
 .titles h2 {
-    text-align: center;
-    margin: 1vw 0 0 0;
-    font-size: 3vw;
-    color: #2a5d2a;
-    font-weight: bold;
+  text-align: center;
+  margin: 1vw 0 0 0;
+  font-size: 3vw;
+  color: #2a5d2a;
+  font-weight: bold;
 }
 
 div.logo a {
 
-    font-size: medium;
+  font-size: medium;
 }
+
 p.inicio {
 
-    text-align: center;
-    color: #2a5d2a;
-    font-size: 1.5vw;
-    margin: 5vw 0 5vw 0;
+  text-align: center;
+  color: #2a5d2a;
+  font-size: 1.5vw;
+  margin: 5vw 0 5vw 0;
 }
+
 .main p.inicio {
-    text-align: center;
-    font-size: 4vw;
-    font-weight: bold;
-    color: #208120;
+  text-align: center;
+  font-size: 4vw;
+  font-weight: bold;
+  color: #208120;
 }
+
 ul {
-    padding: 0;
+  padding: 0;
 }
+
 ul h2 {
-    margin: 0;
-    color: #308b1d;
+  margin: 0;
+  color: #308b1d;
 }
+
 li {
-    list-style: none;
+  list-style: none;
 }
+
 li h2 span {
-    color: #288529;
+  color: #288529;
 }
+
 li p {
-    color: #2a5d2a;
-    font-size: 1vw;
+  color: #2a5d2a;
+  font-size: 1vw;
 }
+
 .dicas {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px; 
-    flex-wrap: wrap; 
-    margin: 5vw 5vw 5vw 5vw;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  margin: 5vw 5vw 5vw 5vw;
 }
 
 .item {
-    width: calc(48% - 10px); 
-    margin-bottom: 20px;
-    background-color: #d8ffd8;
-    border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
+  width: calc(48% - 10px);
+  margin-bottom: 20px;
+  background-color: #d8ffd8;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
 }
 
 .item:hover {
-    transform: translateY(-3px); 
+  transform: translateY(-3px);
 }
 
 .item img {
-    width: 50%;
+  width: 50%;
 }
 
 .item li {
-    display: flex;
+  display: flex;
 }
 
 li.corrida img {
-    width: 30%;
+  width: 30%;
 }
 
 
 :root {
-    --gap-width: 30px; /* Espaçamento entre os slides */
-    --slide-width: 300px; /* Largura do slide */
-    --slide-height: 150px; /* Altura do slide */
-    --slide-bg-color: rgba(18, 92, 251, 0.52);
-    --overlay-bg-color: rgba(0, 0, 0, 0.5);
-    --overlay-text-color: #fff;
-    --overlay-transition: opacity 0.3s ease;
-    --border-radius: 20px;
+  --gap-width: 30px;
+  /* Espaçamento entre os slides */
+  --slide-width: 300px;
+  /* Largura do slide */
+  --slide-height: 150px;
+  /* Altura do slide */
+  --slide-bg-color: rgba(18, 92, 251, 0.52);
+  --overlay-bg-color: rgba(0, 0, 0, 0.5);
+  --overlay-text-color: #fff;
+  --overlay-transition: opacity 0.3s ease;
+  --border-radius: 20px;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 80%;
+  /* Ajuste o tamanho do carrossel */
+  margin: 0 auto;
+  /* Centraliza o carrossel */
+}
+
+.carousel-track {
+  display: flex;
+  gap: var(--gap-width);
+  /* Usa a variável para espaçamento */
+  animation: scroll var(--scroll-duration) linear infinite;
+}
+
+.slide {
+  background: var(--slide-bg-color);
+  flex: 0 0 var(--slide-width);
+  /* Define a largura dos slides */
+  height: var(--slide-height);
+  /* Define a altura dos slides */
+  border-radius: var(--border-radius);
+  position: relative;
+  overflow: hidden;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: var(--overlay-bg-color);
+  color: var(--overlay-text-color);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: var(--overlay-transition);
+  border-radius: var(--border-radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide:hover .overlay {
+  opacity: 1;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
   }
-  
-  .carousel {
-    overflow: hidden;
-    width: 80%; /* Ajuste o tamanho do carrossel */
-    margin: 0 auto; /* Centraliza o carrossel */
+
+  100% {
+    transform: translateX(calc(-1 * var(--total-width)));
   }
-  
-  .carousel-track {
-    display: flex;
-    gap: var(--gap-width); /* Usa a variável para espaçamento */
-    animation: scroll var(--scroll-duration) linear infinite;
-  }
-  
-  .slide {
-    background: var(--slide-bg-color);
-    flex: 0 0 var(--slide-width); /* Define a largura dos slides */
-    height: var(--slide-height); /* Define a altura dos slides */
-    border-radius: var(--border-radius);
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .overlay {
-    position: absolute;
-    bottom: 0;
-    background: var(--overlay-bg-color);
-    color: var(--overlay-text-color);
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: var(--overlay-transition);
-    border-radius: var(--border-radius);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .slide:hover .overlay {
-    opacity: 1;
-  }
-  
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(calc(-1 * var(--total-width)));
-    }
-  }
-  
-  .carousel:hover .carousel-track {
-    animation-play-state: paused;
-  }
-  .carousel-title {
-    text-align: center; /* Centraliza o título */
-    margin-bottom: 20px; /* Adiciona espaçamento abaixo do título */
-    color: #fff; /* Cor do texto (ajuste conforme necessário) */
-  }
-  
-  .carousel {
-    overflow: hidden;
-    width: 80%; /* Ajuste conforme necessário */
-    margin: 20px auto 0; /* Adiciona margem superior para espaçamento */
-  }
+}
+
+.carousel:hover .carousel-track {
+  animation-play-state: paused;
+}
+
+.carousel-title {
+  text-align: center;
+  /* Centraliza o título */
+  margin-bottom: 20px;
+  /* Adiciona espaçamento abaixo do título */
+  color: #fff;
+  /* Cor do texto (ajuste conforme necessário) */
+}
+
+.carousel {
+  overflow: hidden;
+  width: 80%;
+  /* Ajuste conforme necessário */
+  margin: 20px auto 0;
+  /* Adiciona margem superior para espaçamento */
+}
 
 .saibamais {
   text-align: center;
   padding: o 40vw 0 40vw;
-}  
+}
+
 .saibamais p.saiba {
   font-size: x-large;
 }
+
 .saibamais p a {
   text-decoration: none;
   color: #208120;
   font-weight: bold;
 }
-  .footer {
-    margin: 2vw 0 0 0;
-    padding: 40px 0;
-    background-color: #3b773b;
-    color: white;
+
+.footer {
+  margin: 2vw 0 0 0;
+  padding: 40px 0;
+  background-color: #3b773b;
+  color: white;
 }
 
 .footer ul {
-    padding: 0;
-    list-style: none;
-    text-align: center;
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
 }
 
 .footer li {
-    display: inline-block; /* Change to inline-block for horizontal layout */
-    padding: 0 10px;
+  display: inline-block;
+  /* Change to inline-block for horizontal layout */
+  padding: 0 10px;
 }
 
 .footer ul a {
-    color: inherit;
-    text-decoration: none;
-    opacity: 0.8;
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
 }
 
 .footer ul a:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .footer .social {
-    text-align: center;
-    padding-bottom: 25px;
+  text-align: center;
+  padding-bottom: 25px;
 }
 
-.footer .social > a {
-    font-size: 24px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 50%;
-    border: 1px solid #ccc;
-    margin: 0 8px;
-    color: inherit;
-    opacity: 0.75;
+.footer .social>a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
 }
 
-.footer .social > a:hover {
-    opacity: 0.9;
+.footer .social>a:hover {
+  opacity: 0.9;
 }
 
 .footer .copyright {
-    margin-top: 15px;
-    text-align: center;
-    font-size: 13px;
-    color: #aaa;
-    margin-bottom: 0;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
 }
-.footer .footer-break{
-  height:2px;
-  border-width:0;
-  color:white;
-  background-color:white
-    }
+
+.footer .footer-break {
+  height: 2px;
+  border-width: 0;
+  color: white;
+  background-color: white
+}
+
+@media screen and (max-width: 576px) {
+
+  .titles h1 {
+
+    font-size: larger;
+  }
+
+  .titles h2 {
+
+    font-size: large;
+  }
+
+  .dicas {
+    display: block;
+
+  }
+
+  .dicas .item h2 {
+
+    font-size: large;
+  }
+
+  .dicas .item p {
+
+    font-size: small;
+    
+  }
+
+  .dicas .item {
+
+    width: 90%;
+  }
+
+  
+}
