@@ -327,6 +327,10 @@ li.corrida img {
 
     font-size: small;
   }
-
+  
+  .item img {
+    max-width: 200px; /* Reduz o tamanho em telas menores */
+  
+  }
 
 }
