@@ -241,3 +241,128 @@ p.miss {
     }*/
     
     
+/* Responsividade para "Nossa Missão" */
+@media (max-width: 576px) {
+    .sobre2 {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .sobre2 .nossa h1 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .sobre2 .miss {
+        font-size: 1rem;
+        margin: 0 10px;
+    }
+
+    .sobre2 .limao {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .sobre2 .limao img {
+        width: 80%;
+        max-width: 350px;
+        margin-top: 10px;
+    }
+}
+
+/* Seção "Nossa Equipe" */
+.equipe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+/* Ajustando o tamanho das fotos da equipe */
+.team-member {
+    width: 250px; /* Aumentando o tamanho das imagens */
+    height: 50px;
+    
+}
+
+.team-member:hover {
+    transform: scale(1.1); /* Efeito ao passar o mouse */
+}
+
+/* Responsividade para a seção "Nossa Equipe" */
+@media (max-width: 576px) {
+    .team-member {
+        width: 250px; /* Aumentando um pouco o tamanho nas telas menores */
+        height: 180px;
+        margin-bottom: 2px; /* Espaçamento entre as fotos */
+    }
+}
+
+/* Nomes dos membros da equipe */
+.nomes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center; /* Centralizando os nomes */
+    margin: 0 0 0 15vw;
+}
+
+.nomes h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Responsividade para os nomes */
+@media (max-width: 576px) {
+    .nomes h3 {
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+}
+
+/* Responsividade para "Sobre Nós" */
+@media (max-width: 576px) {
+    .sobre div, 
+    .sobre2 .nossa {
+        padding: 0 10px; /* Adiciona um pouco de padding para não ficar colado na tela */
+    }
+    
+    .sobre img, 
+    .sobre2 .limao img {
+        max-width: 100%; /* A imagem ocupa toda a largura disponível */
+    }
+    
+    .sobre .um p,
+    .sobre2 .miss {
+        font-size: 1rem; /* Ajusta o tamanho da fonte */
+    }
+}
+@media (max-width: 576px) {
+    .sobre2 {
+        flex-direction: column; /* Coloca o conteúdo um em cima do outro em telas pequenas */
+        gap: 15px; /* Reduz o espaçamento entre a imagem e o texto */
+    }
+
+    .sobre2 .nossa {
+        text-align: center; /* Centraliza o texto em telas pequenas */
+        padding-right: 0; /* Remove o padding para não sobrepor */
+    }
+
+    .sobre2 .nossa h1 {
+        margin-left: 0; /* Remove a margem à esquerda em telas pequenas */
+    }
+
+    .sobre2 .limao img {
+        width: 100%; /* Torna a imagem responsiva */
+        max-width: 300px; /* Limita o tamanho máximo para dispositivos pequenos */
+    }
+
+    /* Responsividade para o parágrafo */
+    .sobre2 .nossa .miss {
+        margin-left: 0; /* Remove o deslocamento no parágrafo para telas pequenas */
+    }
+}
