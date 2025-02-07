@@ -81,7 +81,7 @@ h1 {
     color: #333;
 }
 
-p {
+p.texto {
     font-size: 1.2rem;
     color: #555;
     max-width: 800px;
@@ -89,6 +89,15 @@ p {
     line-height: 1.6;
     text-align: justify;
 }
+p.miss {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    text-align: justify;
+}
+
 
 .equipe {
     display: flex;
@@ -184,6 +193,12 @@ p {
         color: white;
         margin: 1vw 50vw 0 50vw;
         font-size: x-large;
+    }
+    .footer p.desenvolvedoras {
+        color: white;
+        text-align: center;
+        margin: 1vw 0 0 0;
+        opacity: 0.8;
     }
 
    /* @media (max-width: 576px) {

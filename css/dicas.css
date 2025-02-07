@@ -289,6 +289,11 @@ li.corrida img {
   margin: 1vw 50vw 0 50vw;
   font-size: x-large;
 }
+.footer p.nomes {
+  text-align: center;
+  margin: 1vw 0 0 0;
+  opacity: 0.8;
+}
 
 @media screen and (max-width: 576px) {
 

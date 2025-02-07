@@ -165,7 +165,11 @@ header {
     text-decoration: none;
     opacity: 0.8;
 }
-
+.footer p.nomes {
+    text-align: center;
+    margin: 1vw 0 0 0;
+    opacity: 0.8;
+}
 .footer ul a:hover {
     opacity: 1;
 }
