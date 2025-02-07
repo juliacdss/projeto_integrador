@@ -313,10 +313,7 @@ header {
             line-height: 30px;
         }
     }
-    @media (max-width: 800px){
-       
-
-
+    @media (max-width: 1025px){
         .strawberries {
             display: none; /* Oculta a imagem lateral */
         }
