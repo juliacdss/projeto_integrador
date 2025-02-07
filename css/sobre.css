@@ -341,6 +341,7 @@ p.miss {
         font-size: 1rem; /* Ajusta o tamanho da fonte */
     }
 }
+
 @media (max-width: 576px) {
     .sobre2 {
         flex-direction: column; /* Coloca o conteúdo um em cima do outro em telas pequenas */
@@ -348,12 +349,12 @@ p.miss {
     }
 
     .sobre2 .nossa {
-        text-align: center; /* Centraliza o texto em telas pequenas */
+        text-align: left; /* Alinha o texto à esquerda em vez de centralizado */
         padding-right: 0; /* Remove o padding para não sobrepor */
     }
 
     .sobre2 .nossa h1 {
-        margin-left: 0; /* Remove a margem à esquerda em telas pequenas */
+        margin-left: 50px; /* Adiciona uma margem à esquerda para mover o título para a direita */
     }
 
     .sobre2 .limao img {
@@ -361,8 +362,12 @@ p.miss {
         max-width: 300px; /* Limita o tamanho máximo para dispositivos pequenos */
     }
 
+    .sobre2 .limao {
+        display: none; /* Remove a imagem */
+    }
+
     /* Responsividade para o parágrafo */
     .sobre2 .nossa .miss {
-        margin-left: 0; /* Remove o deslocamento no parágrafo para telas pequenas */
+        margin-left: 30px; /* Adiciona uma margem à esquerda para o parágrafo */
     }
 }
