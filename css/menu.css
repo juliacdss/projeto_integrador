@@ -149,7 +149,7 @@ header {
 }
 
 .menu-toggle {
-    display: block;
+    display: none; /* Esconde o botão do menu por padrão */
     cursor: pointer;
 }
 
@@ -232,7 +232,7 @@ header {
 
 @media (max-width: 576px) /*dispositivos até 576px - celulares*/ {
     .menu-toggle {
-        display: block; /* Exibe o botão do menu em telas pequenas */
+        display: block; /* Exibe o botão do menu em telas pequenas */ 
     }
 
     .nav-links {

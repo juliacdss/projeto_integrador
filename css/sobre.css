@@ -180,6 +180,11 @@ p {
   color:white;
   background-color:white
     }
+    .footer a span {
+        color: white;
+        margin: 1vw 50vw 0 50vw;
+        font-size: x-large;
+    }
 
    /* @media (max-width: 576px) {
         html {

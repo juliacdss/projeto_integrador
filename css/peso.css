@@ -222,7 +222,11 @@ img.dish-sopa {
  color:white;
  background-color:white
    }
-
+   .footer a span {
+      color: white;
+      margin: 1vw 50vw 0 50vw;
+      font-size: x-large;
+  }
 
 
 
