@@ -298,7 +298,7 @@ p.miss {
         height: 180px;
         margin-bottom: 2px; /* Espaçamento entre as fotos */
     }
-}
+
 
 /* Nomes dos membros da equipe */
 .nomes {
@@ -315,7 +315,7 @@ p.miss {
     margin-bottom: 10px;
     font-weight: 600;
 }
-
+}
 /* Responsividade para os nomes */
 @media (max-width: 576px) {
     .nomes h3 {
