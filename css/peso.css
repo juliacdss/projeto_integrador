@@ -232,8 +232,12 @@ img.dish-sopa {
    margin: 1vw 0 0 0;
    opacity: 0.8;
 }
-
-
+.gallery ul {
+   list-style: none;
+}
+.wrap {
+   display: flex;
+}
 
 /* RESPONSIVIDADE*/
 
@@ -241,8 +245,13 @@ img.dish-sopa {
 
    .gallery {
       display:block;
+      list-style: none;
       
    }
+   .gallery ul {
+      list-style: none;
+
+  }
    .dish {
       margin: 5px;
    }
@@ -252,5 +261,20 @@ img.dish-sopa {
       height: auto;
       border-radius: 6px;
    }
+
+   
+   .container-cafe-lanche {
+      display: flex;
+   }
+   .wrap {
+      display: flex;
+   }
+   .almoco .dish:nth-last-child(-n+2) {
+      display: none;
+  }
+  .janta .dish:nth-last-child(-n+2) {
+   display: none;
+}
+
   
 }
